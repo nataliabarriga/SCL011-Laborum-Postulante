@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Input from './Component/personalInformation';
+import { ProviderContext } from './Component/Provider.js';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <ProviderContext>
+        <Input></Input>
+      </ProviderContext>
     </div>
   );
 }
