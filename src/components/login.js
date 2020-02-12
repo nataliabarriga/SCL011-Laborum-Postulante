@@ -1,4 +1,5 @@
 import React from 'react';
+//import db from "../ConfigFirebase/FirebaseInit";
 import firebase from "firebase/app";
 
 import 'firebase/auth'
@@ -6,7 +7,8 @@ import './style/login.css';
 
 
 class Login extends React.Component {
-    //Al escribir en el input se vea lo que escriba
+    //Al escribir en el input se vea lo el estado
+
     handleChange = e => {
         console.log({
             name: e.target.name,
