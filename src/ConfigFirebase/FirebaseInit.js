@@ -1,8 +1,9 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/database";
+import 'firebase/auth';
 
-var firebaseConfig = firebase.initializeApp({
+firebase.initializeApp({
     apiKey: "AIzaSyCLA_dSSlsWUmaV6w7nJil8RiwdM2AD5uQ",
     authDomain: "laborum-scl011.firebaseapp.com",
     databaseURL: "https://laborum-scl011.firebaseio.com",
@@ -11,9 +12,8 @@ var firebaseConfig = firebase.initializeApp({
     messagingSenderId: "116883762326",
     appId: "1:116883762326:web:f4c9872febdee43da366b7",
     measurementId: "G-MT17B4HRXW"
-},
-    firebase.initializeApp(firebaseConfig))
+})
 
-let db = firebase.firestore();
+export const db = firebase.firestore();
 
-export default db;
+export const auth = firebase.auth();

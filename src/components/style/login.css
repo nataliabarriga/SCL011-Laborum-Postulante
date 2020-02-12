@@ -1,5 +1,43 @@
-.name, .email, .password {
-    display: block;
-    margin-top: 7px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
+
+.logoLaboratoria{
+    width: 23%;
+    margin-top: 7%;
+}
+
+.container-title-registry{
+    font-family: 'Mada';
+    font-style: normal;
+    color: #2A303A;
+}
+
+.email, .password {
+    background: #FFFFFF;
+/* Secuandario 2 */
+
+border: 1px solid #9DC5BB;
+border-radius: 5px;
+}
+
+.title-label{
+    font-family: Mada;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 137% */
+
+display: flex;
+align-items: center;
+
+/* Negro impuro */
+
+color: #2A303A;
+
+}
+.btn-create-account{
+    border: 1px solid #00BCA0;
+box-sizing: border-box;
+border-radius: 5px;
+display: block;
 }
