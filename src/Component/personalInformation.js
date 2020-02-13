@@ -11,14 +11,20 @@ const Input = () => {
       lastName: myState.lastName,
       city: myState.city,
       dateOfBirth: myState.dateOfBirth,
+      stateId: myState.stateId,
     })
       .then((docRef) => {
-        console.log('Document written with ID: ', docRef.id);
+      //  console.log('Document written with ID: ', docRef.id);
+        dispatch({
+          type: 'ADD_ID',
+          payload: docRef.id,
+        });
       })
       .catch((error) => {
         console.error('Error adding document: ', error);
       });
   };
+
   const onChange = (event) => {
     dispatch({
       type: 'ADD_INFORMATION',

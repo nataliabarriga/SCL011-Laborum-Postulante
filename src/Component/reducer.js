@@ -6,6 +6,10 @@ const Reducer = (state, action) => {
         ...state,
         [action.field]: action.value,
       };
+    case 'ADD_ID':
+      return{
+        stateId: [...state.stateId, action.payload]
+      }
     default:
       throw new Error();
   }
