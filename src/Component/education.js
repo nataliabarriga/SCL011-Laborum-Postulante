@@ -9,29 +9,36 @@ function Education() {
   const [description, setDescription] = useState('');
   const [area, setArea] = useState('');
 
+ 
+
   return (
     <div>
-      <p>Nombre Institución</p>
-      <input type="text" onChange={(event) => setnameInstitution(event.target.value)} value={nameInstitution} />
+      <h3>Educación</h3>
+      <form action={}>
+        <p>Nombre Institución</p>
+        <input type="text" onChange={(event) => setnameInstitution(event.target.value)} value={nameInstitution} />
 
-      <p>Título</p>
-      <input type="text" onChange={(event) => setTitle(event.target.value)} value={title} />
+        <p>Título</p>
+        <input type="text" onChange={(event) => setTitle(event.target.value)} value={title} />
 
-      <p>Desde</p>
-      <input type="date" onChange={(event) => setSince(event.target.value)} value={since} />
+        <p>Desde</p>
+        <input type="date" onChange={(event) => setSince(event.target.value)} value={since} />
 
-      <p>Hasta</p>
-      <input type="date" onChange={(event) => setUntil(event.target.value)} value={until} />
+        <p>Hasta</p>
+        <input type="date" onChange={(event) => setUntil(event.target.value)} value={until} />
 
-      <p>Descripción</p>
-      <input type="text" onChange={(event) => setDescription(event.target.value)} value={description} />
+        <p>Descripción</p>
+        <input type="text" onChange={(event) => setDescription(event.target.value)} value={description} />
 
-      <p>Área</p>
-      <input type="text" onChange={(event) => setArea(event.target.value)} value={area} />
+        <p>Área</p>
+        <input type="text" onChange={(event) => setArea(event.target.value)} value={area} />
 
+        <button type="submit">Agregar nueva experiencia laboral</button>
+      </form>
 
     </div>
   );
 }
+
 
 export default Education;
