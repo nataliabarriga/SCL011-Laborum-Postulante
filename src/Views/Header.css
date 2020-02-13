@@ -89,12 +89,14 @@ h4 {
 }
 
 .btnTransparent {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
     border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
     border-radius: 50%;
     background: none;
+    display: flex;
+    justify-content: center;
 }
 
 /* Modal Perfil */

@@ -47,7 +47,7 @@ class Header extends Component {
                     </div>
                     <button className="btnTransparent"><img src={FlechaAbajo} alt="flecha" className="icon" /></button>
                 </nav>
-                <ModalProfile />
+                {/* <ModalProfile /> */}
             </header>
         )
     }
