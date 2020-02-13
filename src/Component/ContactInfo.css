@@ -1,0 +1,47 @@
+* {
+  background-color: #F5F7F9;
+}
+
+.container {
+  padding-left: 5%;
+}
+
+h3 {
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #00BCA0;
+}
+
+.title2 {
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #5E807F;
+}
+
+input, label {
+  position: relative;
+  display: flex;
+  justify-content: left;
+
+  background: #FFFFFF;
+
+  border: 1px solid #CEF8ED;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 175px;
+  height: 25px;
+}
+
+.btn {
+  background-color: #00BCA0;
+}
