@@ -3,22 +3,23 @@ import db from '../ConfigFirebase/FirebaseInit';
 import { useMyContext } from './Provider';
 
 
-function Education() {
+function WorkExperience() {
   const [myState, dispatch] = useMyContext();
+
 
   const sendFirebase = () => {
     db.collection('profile').add({
-      nameInstitution: myState.nameInstitution,
-      educationTitle: myState.educationTitle,
-      educationSince: myState.educationSince,
-      educationUntil: myState.educationUntil,
-      educationDescription: myState.educationDescription,
-      educationArea: myState.educationArea,
+      nameWorkInstitution: myState.nameWorkInstitution,
+      workTitle: myState.workTitle,
+      workSince: myState.workSince,
+      workUntil: myState.workUntil,
+      workDescription: myState.workDescription,
+      workArea: myState.workArea,
     })
       .then((docRef) => {
       //  console.log('Document written with ID: ', docRef.id);
         dispatch({
-          type: 'ADD_EDUCATION',
+          type: 'ADD_WORKEXPERIENCE',
           payload: docRef.id,
         });
       })
@@ -29,7 +30,7 @@ function Education() {
 
   const onChange = (event) => {
     dispatch({
-      type: 'ADD_EDUCATION',
+      type: 'ADD_WORKEXPERIENCE',
       field: event.target.name,
       value: event.target.value,
     });
@@ -37,55 +38,54 @@ function Education() {
 
   return (
     <div>
-      <h3>Educación</h3>
+      <h3>Experiencia Laboral</h3>
       <p>Nombre Institución</p>
       <input
         type="text"
-        name="nameInstitution"
+        name="nameWorkInstitution"
         onChange={onChange}
       />
 
       <p>Título</p>
       <input
         type="text"
-        name="educationTitle"
+        name="workTitle"
         onChange={onChange}
       />
 
       <p>Desde</p>
       <input
         type="date"
-        name="educationSince"
+        name="workSince"
         onChange={onChange}
       />
 
       <p>Hasta</p>
       <input
         type="date"
-        name="educationUntil"
+        name="workUntil"
         onChange={onChange}
       />
 
       <p>Descripción</p>
       <input
         type="text"
-        name="educationDescription"
+        name="workDescription"
         onChange={onChange}
       />
 
       <p>Área</p>
       <input
         type="text"
-        name="educationArea"
+        name="workArea"
         onChange={onChange}
       />
 
-      <button type="submit">Agregar nueva Educación</button>
+      <button type="submit">Agregar nueva experiencia laboral</button>
       <button type="submit" onClick={sendFirebase}>Guardar</button>
 
     </div>
   );
 }
 
-
-export default Education;
+export default WorkExperience;
