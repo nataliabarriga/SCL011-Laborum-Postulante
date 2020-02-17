@@ -1,3 +1,4 @@
+
 header {
     width: 100%;
     height: 80px;
@@ -13,16 +14,18 @@ header {
     align-items: center;
 }
 
+
 .logo {
     width: 300px;
 }
 
-nav {
+nav{
     border-bottom: 1px solid #ACB3B3;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 
 .search {
     width: 325px;
@@ -44,11 +47,12 @@ nav {
     align-items: center;
 }
 
-.icon {
+
+.icon{
     width: 100%;
 }
 
-.btnCircle {
+.btnCircle{
     width: 40px;
     height: 40px;
     margin-right: 30px;
@@ -57,6 +61,7 @@ nav {
     background: #00BCA0;
     color: white;
 }
+
 
 .imgCircle {
     width: 40px;
@@ -67,10 +72,12 @@ nav {
     border-radius: 50%;
 }
 
+
 .profile {
     width: 150px;
     height: 30px;
 }
+
 
 h3 {
     font-family: 'Mada', sans-serif;
@@ -80,6 +87,7 @@ h3 {
     margin: 0;
 }
 
+
 h4 {
     font-family: 'Mada', sans-serif;
     font-weight: 500;
@@ -87,6 +95,7 @@ h4 {
     color: #90A0B7;
     margin: 0;
 }
+
 
 .btnTransparent {
     border: none;
@@ -149,4 +158,13 @@ h4 {
     font-style: 500;
     font-size: 10px;
     color: #2A303A;
+=======
+
+.btnTransparent{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    background: none;
 }
