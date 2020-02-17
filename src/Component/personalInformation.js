@@ -27,7 +27,6 @@ const Input = () => {
   //     });
   // };
 
-
   const onChange = (event) => {
     dispatch({
       type: 'ADD_INFORMATION',

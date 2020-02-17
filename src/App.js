@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Registry from './Component/registry';
 import { ProviderContext } from './Component/Provider';
 import PersonalInformation from './Views/personalnformationView';
 import Header from './Views/Header';
@@ -11,6 +12,7 @@ function App() {
       <ProviderContext>
         <PersonalInformation></PersonalInformation>
       </ProviderContext>
+    <Registry></Registry>
     </div>
   );
 }
