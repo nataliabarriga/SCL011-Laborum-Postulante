@@ -6,11 +6,11 @@ import Header from './Views/Header';
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">
+      <Header />
       <ProviderContext>
         <PersonalInformation></PersonalInformation>
       </ProviderContext>
-      <Header/>
     </div>
   );
 }
