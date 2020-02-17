@@ -1,5 +1,4 @@
 import React from 'react';
-import "./personaInformationView.css"
 import Input from '../Component/personalInformation';
 import AbautMe from '../Component/abautMe';
 import { Prueba } from '../Component/router';

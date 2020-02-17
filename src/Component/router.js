@@ -3,7 +3,7 @@ import React from 'react';
 import Input from '../Component/personalInformation';
 import OtroComponente from './workExperiences';
 import Education from './educationProfile';
-import PersonalInformation from '../Views/personalnformationView';
+import PersonalInformation from '../Views/PersonalInfo';
 
 export const Prueba = () => {
   return (
