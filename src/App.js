@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
+import Header from './Views/Header';
+import FilterBar from './Views/FilterBar';
 import Registry from './Component/registry';
 import { ProviderContext } from './Component/Provider';
 import PersonalInformation from './Views/personalnformationView';
-import Header from './Views/Header';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
+
+      <Header/>
+      <FilterBar/>
       <ProviderContext>
         <PersonalInformation></PersonalInformation>
       </ProviderContext>

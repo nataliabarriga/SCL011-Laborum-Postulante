@@ -1,4 +1,5 @@
-header{
+
+header {
     width: 100%;
     height: 80px;
     background: #E5E5E5;
@@ -6,14 +7,15 @@ header{
     flex-direction: row;
 }
 
-.logoContainer{
+.logoContainer {
     margin-right: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
+
+.logo {
     width: 300px;
 }
 
@@ -24,7 +26,8 @@ nav{
     align-items: center;
 }
 
-.search{
+
+.search {
     width: 325px;
     height: 35px;
     padding: 5px 20px;
@@ -32,7 +35,7 @@ nav{
     border: none;
 }
 
-.btnSearch{
+.btnSearch {
     width: 35px;
     height: 35px;
     margin: 0 150px 0 -35px;
@@ -43,6 +46,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 
 .icon{
     width: 100%;
@@ -58,7 +62,8 @@ nav{
     color: white;
 }
 
-.imgCircle{
+
+.imgCircle {
     width: 40px;
     height: 40px;
     margin: 0 10px 0 30px;
@@ -67,12 +72,14 @@ nav{
     border-radius: 50%;
 }
 
-.profile{
+
+.profile {
     width: 150px;
     height: 30px;
 }
 
-h3{
+
+h3 {
     font-family: 'Mada', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -80,7 +87,8 @@ h3{
     margin: 0;
 }
 
-h4{
+
+h4 {
     font-family: 'Mada', sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -88,6 +96,69 @@ h4{
     margin: 0;
 }
 
+
+.btnTransparent {
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Modal Perfil */
+
+.modalProfile {
+    width: 257px;
+    height: 421px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 76px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconModalProfile{
+    width: 74px;
+}
+
+.btnBorder {
+    width: 185px;
+    height: 45px;
+    margin: 22px 0;
+    border: 1px solid #00BCA0;
+    border-radius: 5px;
+    font-family: 'Mada', sans-serif;
+    font-style: 600;
+    font-size: 16px;
+    color: #00BCA0;
+    color: #00BCA0;
+}
+
+.btnNoBorder{
+    width: 185px;
+    height: 45px;
+    border: none;
+    font-family: 'Mada', sans-serif;
+    font-style: 600;
+    font-size: 16px;
+    color: #00BCA0;
+}
+
+.credits{
+    font-family: 'Mada', sans-serif;
+    font-style: 500;
+    font-size: 10px;
+    color: #2A303A;
+=======
 
 .btnTransparent{
     width: 40px;
