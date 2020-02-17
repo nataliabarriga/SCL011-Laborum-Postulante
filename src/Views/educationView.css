@@ -1,5 +1,6 @@
-.view {
-  border: 1px solid black; 
-  margin-left: 30%;
-  margin-top: 15%;
+.container {
+  border: 1px solid black;
+  margin-left: 360px;
+  padding-left: 5%;
+  background-color: #F5F7F9;
 }

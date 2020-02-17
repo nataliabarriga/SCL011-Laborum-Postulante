@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import Sidebar from '../Component/defaultComponents/Sidebar';
-import Footer from '../Component/defaultComponents/Footer';
-import Header from '../Component/defaultComponents/Header';
+import Sidebar from './defaultComponents/Sidebar';
+import Footer from './defaultComponents/Footer';
+import Header from './defaultComponents/Header';
 
 const Home = () => {
   return (

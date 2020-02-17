@@ -33,7 +33,7 @@ export default educacionView; */
 
 function educacionView() {
   return (
-    <div className="view col-7">
+    <div className="container col-7">
       <Education />
     </div>
   );
