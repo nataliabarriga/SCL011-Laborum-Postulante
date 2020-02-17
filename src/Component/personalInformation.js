@@ -27,6 +27,7 @@ const Input = () => {
   //     });
   // };
 
+
   const onChange = (event) => {
     dispatch({
       type: 'ADD_INFORMATION',
@@ -36,7 +37,6 @@ const Input = () => {
   };
 
   return (
-
     <div>
       <p>Información Básica</p>
 
@@ -66,6 +66,7 @@ const Input = () => {
 
       <p>Fecha de nacimiento</p>
       <input type="date" name="dateOfBirth" onChange={onChange} />
+
     </div>
   );
 };

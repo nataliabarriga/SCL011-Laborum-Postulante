@@ -20,6 +20,7 @@ const Reducer = (state, action) => {
         ...state,
         [action.field]: action.value,
       };
+
     default:
       throw new Error();
   }
