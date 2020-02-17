@@ -64,7 +64,7 @@ const Input = () => {
       <p>Fecha de nacimiento</p>
       <input type="date" name="dateOfBirth" onChange={onChange} />
       <p>Sobre tí</p>
-      <button onClick={sendFirebase}>Guardar</button>
+      <button type="submit" onClick={sendFirebase}>Guardar</button>
     </div>
   );
 };
