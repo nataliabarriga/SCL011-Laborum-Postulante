@@ -14,7 +14,7 @@ const Input = () => {
       stateId: myState.stateId,
     })
       .then((docRef) => {
-      //  console.log('Document written with ID: ', docRef.id);
+        //  console.log('Document written with ID: ', docRef.id);
         dispatch({
           type: 'ADD_ID',
           payload: docRef.id,
