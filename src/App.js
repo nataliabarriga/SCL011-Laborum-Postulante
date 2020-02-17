@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import Input from './Component/personalInformation';
-import { ProviderContext } from './Component/Provider.js';
-import Header from "./Views/Header"
+import { ProviderContext } from './Component/Provider';
+import PersonalInformation from './Views/personalnformationView';
+import Header from './Views/Header';
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">
+      <Header />
       <ProviderContext>
-        <Input></Input>
+        <PersonalInformation></PersonalInformation>
       </ProviderContext>
-      <Header/>
     </div>
   );
 }
