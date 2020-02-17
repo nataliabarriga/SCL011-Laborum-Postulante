@@ -1,6 +1,7 @@
 import React from 'react';
 import db from '../ConfigFirebase/FirebaseInit';
 import { useMyContext } from './Provider';
+import './education.css';
 
 
 function Education() {
@@ -36,7 +37,7 @@ function Education() {
   };
 
   return (
-    <div>
+    <div className="educationInside">
       <h3>Educación</h3>
       <p>Nombre Institución</p>
       <input

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-// import Education from '../Component/education';
-// import Education from '../Component/education';
+import React from 'react';
+import Education from '../Component/education';
+import './educationView.css';
 
 /* function educacionView() {
 
@@ -33,8 +33,8 @@ export default educacionView; */
 
 function educacionView() {
   return (
-    <div>
-      <p>hola</p>
+    <div className="view col-7">
+      <Education />
     </div>
   );
 }
