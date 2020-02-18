@@ -5,11 +5,10 @@ import './App.css';
 // import FilterBar from './Views/FilterBar';
 import Home from './Views/defaultComponent/Home';
 //import ContainerForm from './Views/ContainerForm';
-import Perfil from './Component/personalInformation';
+// import Perfil from './Component/personalInformation';
 // import Registry from './Component/registry';
 // import PersonalInformation from './Views/PersonalInfo';
 // import Sidebar from './Views/Sidebar';
-
 
 function App() {
   return (
@@ -17,9 +16,9 @@ function App() {
       <BrowserRouter>
         <ProviderContext>
           <Home />
-          <Switch>
+          {/* <Switch>
             <Route exact path="/perfil" component={Perfil} />
-          </Switch>
+          </Switch> */}
         </ProviderContext>
       </BrowserRouter>
     </div>

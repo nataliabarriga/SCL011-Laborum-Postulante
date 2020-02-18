@@ -1,6 +1,7 @@
 import React from 'react';
-import { useMyContext } from "../Provider";
-import "./Forms.css";
+import { useMyContext } from '../Provider';
+import './Forms.css';
+
 
 const AboutYou = () => {
   const [myState, dispatch] = useMyContext();
@@ -13,21 +14,23 @@ const AboutYou = () => {
   };
   return (
     <div>
-      <p>Sobre Mí</p>
+      <p className="titleComponent">Sobre Tí</p>
 
+      <p className="labelComponent">Haz una pequeña descripción de ti, tus intereses y tu experiencia.</p>
       <input
         type="text"
         name="abautMe"
+        className="textComponent-aboutme col-8"
         onChange={onChange}
       />
 
-      <p>Situacíon laboral Actual</p>
-      <select >
+      <p className="labelComponent">Situación laboral Actual</p>
+      <select className="selectComponent col-4">
         <option>Estudiante</option>
-        <option>Estudiante 2</option>
-        <option>Estudiate 3</option>
+        <option>Empleado</option>
+        <option>Independiente</option>
       </select>
-      <button>Guardar</button>
+
     </div>
 
   );

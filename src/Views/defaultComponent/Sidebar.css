@@ -4,32 +4,28 @@
   left: 0;
   bottom: 0;
   top:100px;
-
   font-family: 'Mada', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-
-  background: #2a303a;
-  color: #cef8ed;
+  background: #2A303A;
+  color: #CEF8ED;
   border-top-right-radius: 90px;
 }
-
 
 .star-icon {
   height: 14px;
   width: auto;
   margin-right: 10px;
 }
-
 nav a:hover {
   color: #FFBD3A;
   font-weight: bold;
-} 
+}
 nav a:hover path{
   fill: #FFBD3A;
-} 
+}
 nav a:active path {
   fill: #01F0D1;
 }
@@ -57,6 +53,7 @@ nav li {
   padding: 1.5em 0;
   margin-left: 5%;
 }
+
 
 nav li a {
   color: #cef8ed;
@@ -88,3 +85,4 @@ nav li a {
   font-weight: bold;
   border: solid 1px #6BFFFF;
 }
+
