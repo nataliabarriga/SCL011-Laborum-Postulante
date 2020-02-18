@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ProviderContext } from './Component/Provider';
 import './App.css';
-
 // import FilterBar from './Views/FilterBar';
 import Home from './Views/defaultComponent/Home';
 //import ContainerForm from './Views/ContainerForm';
