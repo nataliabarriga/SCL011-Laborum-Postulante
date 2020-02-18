@@ -1,6 +1,7 @@
 import React from 'react';
 // import db from '../ConfigFirebase/FirebaseInit';
 import { useMyContext } from '../Provider';
+import './Forms.css';
 
 const BasicInfo = () => {
   const [myState, dispatch] = useMyContext();
