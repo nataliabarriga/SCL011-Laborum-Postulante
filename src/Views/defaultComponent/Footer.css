@@ -18,15 +18,21 @@
   justify-content: flex-end;
   height: 90vh;
   position: fixed;
+  z-index: -1;
 }
 .container_footer {
   /* Rectangle 222 */
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
   position: relative;
   left: 36%;
   width: 922px;
   height: 74px;
   border-radius: 50px 0px 0px 0px;
+  z-index:100;
+
 
   /* Negro impuro */
   background: #2a303a;

@@ -1,14 +1,15 @@
 import React from 'react';
-import Input from '../Component/personalInformation';
+import BasicInformation from '../Component/personalInformation';
 import AbautMe from '../Component/abautMe';
 import { Prueba } from '../Component/router';
+import '../Component/Forms.css';
 
 
 const PersonalInformation = () => {
   return (
     <div>
       <div className="containerForm">
-        <Input />
+        <BasicInformation />
         <AbautMe />
         <Prueba></Prueba>
       </div>

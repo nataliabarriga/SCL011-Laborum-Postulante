@@ -1,0 +1,61 @@
+.titleComponent {
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #00BCA0;
+}
+
+.labelComponent {
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #5E807F;
+}
+
+input {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  background: #FFFFFF;
+  border: 1px solid #CEF8ED;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 25px;
+}
+
+.textComponent-aboutme {
+  height: 50px;
+}
+
+.selectComponent{
+  margin: 0 20px 0 0;
+  padding: 5px 20px;
+  background: #FFFFFF;
+  border: 1px solid #00BCA0;
+  border-radius: 6px;
+  font-family: 'Mada';
+  font-style: normal;
+  font-size: 12px;
+  color: #2A303A;
+}
+  
+.btnColor {
+  height: 35px;
+  border-radius: 5px;
+  background-color: #00BCA0;
+  color: white;
+  border: none;
+  font-family: 'Mada', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 15px;
+  float: right;
+}

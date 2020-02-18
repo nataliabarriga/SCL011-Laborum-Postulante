@@ -9,9 +9,10 @@ export const Prueba = () => {
   return (
     <div>
       <Router>
-        <Link to="/educación"><button>Siguente</button></Link>
+        <Link to="/educacion"><button className="btnColor col-2">Siguiente</button></Link>
+        <button type="submit" className="btnColor col-2">Guardar</button>
         <Switch>
-          <Route exact path="/educación" component={Education} />
+          <Route exact path="/educacion" component={Education} />
         </Switch>
       </Router>
     </div>
@@ -22,7 +23,9 @@ export const Prueba2 = () => {
   return (
     <div>
       <Router>
-        <Link to="/"><button>Atras</button></Link>
+        <Link to="/"><button className="btnColor col-2">Atrás</button></Link>
+        <button className="btnColor col-2">Guardar</button>
+        <button className="btnColor col-2">Visualizar CV</button>
         <Switch>
           <Route exact path="/educación" component={Input} />
         </Switch>
@@ -35,8 +38,9 @@ export const Prueba3 = () => {
   return (
     <div>
       <Router>
-        <Link to="/"><button>Atras</button></Link>
-        <Link to="/otroComponente"><button>Siguente</button></Link>
+        <Link to="/"><button className="btnColor col-2">Atrás</button></Link>
+        <button className="btnColor col-2">Guardar</button>
+        <Link to="/otroComponente"><button className="btnColor col-2">Siguiente</button></Link>
         <Switch>
           <Route exact path="/" component={PersonalInformation} />
           <Route exact path="/otroComponente" component={OtroComponente} />

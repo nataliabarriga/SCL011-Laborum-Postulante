@@ -3,7 +3,7 @@ import React from 'react';
 import { useMyContext } from './Provider';
 
 
-const Input = () => {
+const BasicInformation = () => {
   const [myState, dispatch] = useMyContext();
 
   // const sendFirebase = () => {
@@ -36,38 +36,46 @@ const Input = () => {
   };
 
   return (
-    <div>
-      <p>Información Básica</p>
+    <div className="col-12">
+      <p className="titleComponent">Información Básica</p>
 
-      <p>Nombres</p>
-
+      <div className="col-4" />
+      <p className="labelComponent">Nombres</p>
       <input
         type="text"
         name="nameUser"
+        className="input col-8"
         onChange={onChange}
       />
 
-      <p>Apellidos </p>
+      <p className="labelComponent">Apellidos </p>
 
       <input
         type="text"
         name="lastName"
+        className="input col-8"
         onChange={onChange}
       />
 
-      <p>Ciudad , Región ,País</p>
+      <p className="labelComponent">Ciudad , Región ,País</p>
 
       <input
         type="text"
         name="city"
+        className="input col-4"
         onChange={onChange}
       />
 
-      <p>Fecha de nacimiento</p>
-      <input type="date" name="dateOfBirth" onChange={onChange} />
+      <p className="labelComponent">Fecha de nacimiento</p>
+      <input
+        type="date"
+        name="dateOfBirth"
+        className="input col-2"
+        onChange={onChange}
+      />
 
     </div>
   );
 };
 
-export default Input;
+export default BasicInformation;

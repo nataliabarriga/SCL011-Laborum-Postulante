@@ -2,6 +2,7 @@ import React from 'react';
 // import db from '../ConfigFirebase/FirebaseInit';
 import { useMyContext } from './Provider';
 import { Prueba3 } from './router';
+import '../Views/ContainerForm.css';
 
 
 function Education() {
@@ -38,51 +39,57 @@ function Education() {
 
   return (
     <div>
-      <h3>Educación</h3>
-      <p>Nombre Institución</p>
+      <p className="titleComponent">Educación</p>
+      <p className="labelComponent">Nombre Institución</p>
       <input
         type="text"
         name="nameInstitution"
+        className="input col-9"
+
         onChange={onChange}
       />
 
-      <p>Título</p>
+      <p className="labelComponent">Título</p>
       <input
         type="text"
         name="educationTitle"
+        className="input col-5"
         onChange={onChange}
       />
 
-      <p>Desde</p>
+      <p className="labelComponent">Desde</p>
       <input
         type="date"
         name="educationSince"
+        className="input col-2"
         onChange={onChange}
       />
 
-      <p>Hasta</p>
+      <p className="labelComponent">Hasta</p>
       <input
         type="date"
         name="educationUntil"
+        className="input col-2"
         onChange={onChange}
       />
 
-      <p>Descripción</p>
+      <p className="labelComponent">Descripción</p>
       <input
         type="text"
         name="educationDescription"
+        className="textComponent-aboutme col-9"
         onChange={onChange}
       />
 
-      <p>Área</p>
-      <input
-        type="text"
-        name="educationArea"
-        onChange={onChange}
-      />
+      <p className="labelComponent">Área</p>
+        <select  className="selectComponent col-4">
+          <option>Area 1</option>
+          <option>Area 2</option>
+           <option>Area 3</option>
+        </select>
+       
 
       <button type="submit">Agregar nueva Educación</button>
-      <button>Guardar</button>
       <Prueba3 />
 
     </div>
