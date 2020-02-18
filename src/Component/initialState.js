@@ -15,6 +15,20 @@ const initialState = {
   partTime: '',
   firstJob: '',
   practice: '',
+
+  abautMe: '',
+  nameInstitution: '',
+  educationTitle: '',
+  educationSince: '',
+  educationUntil: '',
+  educationDescription: '',
+  educationArea: '',
+  nameWorkInstitution:'',
+  workTitle: '',
+  workSince: '',
+  workUntil: '',
+  workDescription: '',
+  workArea: '',
 };
 
 export default initialState;
