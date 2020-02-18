@@ -1,27 +1,12 @@
 import React from 'react';
-import db from '../ConfigFirebase/FirebaseInit';
-import { useMyContext } from './Provider';
-import { Prueba2 } from './router';
+import { Router, Link, Switch, Route } from "react-router-dom"
+import db from '../../ConfigFirebase/FirebaseInit';
+import { useMyContext } from "../Provider";
+import ProfileThree from "../../Views/ProfileThree"
 
 
 function WorkExperience() {
   const [myState, dispatch] = useMyContext();
-
-  const ButtonsFour = () => {
-    return (
-      <div>
-        <Router>
-          <Link to="/"><button>Atrás</button></Link>
-          <button type="submit">Guardar</button>
-          <Link to="/"><button onClick={sendFirebase}>Visualizar CV</button></Link>
-          <Switch>
-            <Route exact path="/" component={} />
-          </Switch>
-        </Router>
-      </div>
-    );
-  };
-
 
   const sendFirebase = () => {
     db.collection('profilePostulante').add({
@@ -44,6 +29,8 @@ function WorkExperience() {
       workDescription: myState.workDescription,
       workArea: myState.workArea,
     })
+
+
       .then((docRef) => {
         console.log('Document written with ID: ', docRef.id);
         // dispatch({
@@ -55,6 +42,22 @@ function WorkExperience() {
         console.error('Error adding document: ', error);
       });
   };
+
+  const ButtonsFour = () => {
+    return (
+      <div>
+        <Router>
+          <Link to="/ProfileThree"><button>Atrás</button></Link>
+          <button type="submit">Guardar</button>
+          <Link to="/"><button onClick={sendFirebase}>Visualizar CV</button></Link>
+          <Switch>
+            <Route exact path="/ProfileThree" component={ProfileThree} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  };
+
 
   const onChange = (event) => {
     dispatch({
@@ -111,7 +114,7 @@ function WorkExperience() {
 
       <button type="submit">Agregar nueva experiencia laboral</button>
 
-      <ButtonsFour/>
+      <ButtonsFour />
     </div>
   );
 }

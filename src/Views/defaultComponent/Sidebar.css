@@ -1,26 +1,22 @@
 .sidebar {
-  z-index: 1000;
-  font-family: Mada;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top:100px;
+
+  font-family: 'Mada', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  justify-content: center;
+
   background: #2a303a;
-  position: absolute;
-  left: 0%;
-  top: 2%;
-  bottom: 0%;
   color: #cef8ed;
-  height: 100%;
   border-top-right-radius: 90px;
-  margin-top: 100px;
-  width: 277px;
 }
-/* .logo{
-  border: solid 1px red;
-  margin: 40px;
-} */
+
+
 .star-icon {
   height: 14px;
   width: auto;
@@ -41,6 +37,7 @@ nav a:active {
   font-weight: bold;
   color: #01F0D1;
 }
+
 nav ul  {
   margin-top: 20%;
   display: flex;
@@ -48,6 +45,7 @@ nav ul  {
   flex-direction: column;
   width: 200px;
 }
+
 /* nav button  {
   align-content: center;
   margin-top: 15%;
@@ -89,5 +87,4 @@ nav li a {
   color:  #6BFFFF;
   font-weight: bold;
   border: solid 1px #6BFFFF;
-  
 }

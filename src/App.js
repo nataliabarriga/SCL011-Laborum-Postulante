@@ -1,24 +1,28 @@
 import React from 'react';
-import './App.css';
-import Header from './Views/Header';
-import FilterBar from './Views/FilterBar';
-// import Registry from './Component/registry';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ProviderContext } from './Component/Provider';
-import PersonalInformation from './Views/PersonalInfo';
-import Sidebar from './Views/Sidebar';
-import ContainerForm from "./Views/ContainerForm"
+import './App.css';
+
+// import FilterBar from './Views/FilterBar';
+import Home from './Views/defaultComponent/Home';
+//import ContainerForm from './Views/ContainerForm';
+import Perfil from './Component/personalInformation';
+// import Registry from './Component/registry';
+// import PersonalInformation from './Views/PersonalInfo';
+// import Sidebar from './Views/Sidebar';
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Sidebar/>
-      {/* <FilterBar/> */}
-      <ContainerForm/>
-      {/* <ProviderContext>
-        <PersonalInformation></PersonalInformation>
-      </ProviderContext> */}
+      <BrowserRouter>
+        <ProviderContext>
+          <Home />
+          <Switch>
+            <Route exact path="/perfil" component={Perfil} />
+          </Switch>
+        </ProviderContext>
+      </BrowserRouter>
     </div>
   );
 }
