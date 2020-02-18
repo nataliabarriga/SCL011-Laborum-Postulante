@@ -2,7 +2,6 @@ import React from 'react';
 import './ContactInfo.css';
 
 const Contact = () => {
-
   return (
     <div className="container">
       <h3>Datos de contacto</h3>

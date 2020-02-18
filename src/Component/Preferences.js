@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactInfo.css';
 
 function Preferences() {
-  const [fullTime, setFullTime] = useState('');
-  const [partTime, setPartTime] = useState('');
-  const [firstJob, setFirstJob] = useState('');
-  const [practice, setPractice] = useState('');
   return (
     <div className="container">
       <h3>Preferencias</h3>
@@ -17,8 +13,7 @@ function Preferences() {
         <input
           type="checkbox"
           name="fullTime"
-          onChange={(event) => setFullTime(event.target.value)}
-          value={fullTime}
+          // onChange={onChange}
         />
       </label>
       <br />
@@ -30,8 +25,7 @@ function Preferences() {
         <input
           type="checkbox"
           name="partTime"
-          onChange={(event) => setPartTime(event.target.value)}
-          value={partTime}
+          // onChange={onChange}
         />
       </label>
       <br />
@@ -43,8 +37,7 @@ function Preferences() {
         <input
           type="checkbox"
           name="firstJob"
-          onChange={(event) => setFirstJob(event.target.value)}
-          value={firstJob}
+          // onChange={onChange}
         />
       </label>
       <br />
@@ -56,8 +49,7 @@ function Preferences() {
         <input
           type="checkbox"
           name="practice"
-          onChange={(event) => setPractice(event.target.value)}
-          value={practice}
+          // onChange={onChange}
         />
       </label>
     </div>

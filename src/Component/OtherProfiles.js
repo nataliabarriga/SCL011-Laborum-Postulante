@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactInfo.css';
 
-function OtherProfiles() {
-  const [urlLinkedin, setUrlLinkedin] = useState('');
-  const [urlPortfolio, setUrlPortfolio] = useState('');
-  const [urlRrss, setUrlRrss] = useState('');
+const OtherProfiles = () => {
   return (
     <div className="container">
       <h3>Otros perfiles</h3>
@@ -12,25 +9,25 @@ function OtherProfiles() {
       <p className="title2">URL Linkedin</p>
       <input
         type="text"
-        onChange={(event) => setUrlLinkedin(event.target.value)}
-        value={urlLinkedin}
+        name="urlLinkedin"
+        // onChange={onChange}
       />
 
       <p className="title2">URL Portafolio (Behance, Dribbble, etc.)</p>
       <input
         type="text"
-        onChange={(event) => setUrlPortfolio(event.target.value)}
-        value={urlPortfolio}
+        name="urlPortfolio"
+        // onChange={onChange}
       />
 
       <p className="title2">URL Redes sociales (Facebook, Twitter, Instagram, etc.)</p>
       <input
         type="text"
-        onChange={(event) => setUrlRrss(event.target.value)}
-        value={urlRrss}
+        name="urlRrss"
+        // onChange={onChange}
       />
     </div>
   );
-}
+};
 
 export default OtherProfiles;
