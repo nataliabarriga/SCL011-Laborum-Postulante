@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.css';
-<<<<<<< HEAD
 import Input from './Component/personalInformation';
-import ContactInfo from './Component/ContactInfo';
-import { ProviderContext } from './Component/Provider.js';
-import Header from "./Views/Header"
-=======
 import ContactInfo from './Views/ContactInfo';
->>>>>>> CSS not ready yet. Contact info view ok
+import { ProviderContext } from './Component/Provider';
+import Header from './Views/Header';
 
 function App() {
   return (
     <div className="App">
       <ProviderContext>
-        <Input></Input>
-        <ContactInfo />
+        <Input />
       </ProviderContext>
-      <Header/>
+      <Header />
+      <ContactInfo />
     </div>
   );
 }

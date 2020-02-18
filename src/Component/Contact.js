@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactInfo.css';
 
-function Contact() {
-  const [mail, setMail] = useState('');
-  const [backupMail, setBackupMail] = useState('');
-  const [prefixPhone, setPrefixPhone] = useState('');
-  const [phone, setPhone] = useState('');
-  const [backupPhone, setBackupPhone] = useState('');
-  const [backupPrefixPhone, setBackupPrefixPhone] = useState('');
+const Contact = () => {
+
   return (
     <div className="container">
       <h3>Datos de contacto</h3>
@@ -15,8 +10,8 @@ function Contact() {
       <p className="title2">Correo electrónico</p>
       <input
         type="text"
-        onChange={(event) => setMail(event.target.value)}
-        value={mail}
+        name="mail"
+        // onChange={onChange}
       />
 
       <p className="title2">
@@ -24,36 +19,36 @@ function Contact() {
       </p>
       <input
         type="text"
-        onChange={(event) => setBackupMail(event.target.value)}
-        value={backupMail}
+        name="backupMail"
+        // onChange={onChange}
       />
 
       <p className="title2">Teléfono</p>
       <input
         type="text"
-        onChange={(event) => setPrefixPhone(event.target.value)}
-        value={prefixPhone}
+        name="prefixPhone"
+        // onChange={onChange}
       />
       <input
         type="text"
-        onChange={(event) => setPhone(event.target.value)}
-        value={phone}
+        name="phone"
+        // onChange={onChange}
       />
 
       <p className="title2">Teléfono adicional</p>
       <input
         type="text"
-        onChange={(event) => setBackupPhone(event.target.value)}
-        value={backupPhone}
+        name="backupPhone"
+        // onChange={onChange}
       />
       <input
         type="text"
-        onChange={(event) => setBackupPrefixPhone(event.target.value)}
-        value={backupPrefixPhone}
+        name="backupPrefixPhone"
+        // onChange={onChange}
       />
 
     </div>
   );
-}
+};
 
 export default Contact;
