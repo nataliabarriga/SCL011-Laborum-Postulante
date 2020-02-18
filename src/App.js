@@ -11,6 +11,9 @@ import Perfil from './Component/personalInformation';
 // import Sidebar from './Views/Sidebar';
 
 
+import Home from './Views/defaultComponent/Home';
+import Perfil from './Component/personalInformation';
+
 function App() {
   return (
     <div className="App">

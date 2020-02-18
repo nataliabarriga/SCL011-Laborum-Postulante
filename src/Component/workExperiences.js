@@ -2,6 +2,7 @@ import React from 'react';
 import db from '../ConfigFirebase/FirebaseInit';
 import { useMyContext } from './Provider';
 import { Prueba2 } from './router';
+import './Forms.css';
 
 
 function WorkExperience() {
@@ -22,6 +23,21 @@ function WorkExperience() {
     );
   };
 
+
+const ButtonFour = () => {
+  return (
+    <div>
+      <Router>
+        <Link to="/"><button className="btnColor col-2">Atrás</button></Link>
+        <button className="btnColor col-2">Guardar</button>
+        <Link to="/"><button onclikc={sendFirebase}className="btnColor col-2">Visualizar CV</button></Link>
+        <Switch>
+          <Route exact path="/" component={} />
+        </Switch>
+      </Router>
+    </div>
+  );
+};
 
   const sendFirebase = () => {
     db.collection('profilePostulante').add({
@@ -66,54 +82,64 @@ function WorkExperience() {
 
   return (
     <div>
-      <h3>Experiencia Laboral</h3>
-      <p>Nombre Institución</p>
+      <p className="titleComponent">Experiencia Laboral</p>
+      <p className="labelComponent">Nombre Institución</p>
       <input
         type="text"
         name="nameWorkInstitution"
+        className="input col-9"
         onChange={onChange}
       />
 
-      <p>Título</p>
-      <input
-        type="text"
-        name="workTitle"
-        onChange={onChange}
-      />
-
-      <p>Desde</p>
+      <p className="labelComponent">Desde</p>
       <input
         type="date"
         name="workSince"
+        className="labelComponent"
+        className="input col-2"
         onChange={onChange}
       />
 
-      <p>Hasta</p>
+      <p className="labelComponent">Hasta</p>
       <input
         type="date"
         name="workUntil"
+        className="input col-2"
         onChange={onChange}
       />
 
-      <p>Descripción</p>
+        <p className="labelComponent">Cargo</p>
+      <input
+        type="text"
+        name="workTitle"
+        className="labelComponent"
+        className="input col-5"
+        onChange={onChange}
+      />
+
+      <p className="labelComponent">Descripción</p>
       <input
         type="text"
         name="workDescription"
+        className="textComponent-aboutme col-9"
         onChange={onChange}
       />
 
-      <p>Área</p>
-      <input
-        type="text"
-        name="workArea"
-        onChange={onChange}
-      />
+      <p className="labelComponent">Área</p>
+      <select className="selectComponent col-4">
+        <option>Diseño</option>
+        <option>Comercio</option>
+        <option>Gestión</option>
+      </select>
 
       <button type="submit">Agregar nueva experiencia laboral</button>
 
-      <ButtonsFour/>
+      <ButtonFour />
+
     </div>
   );
 }
 
 export default WorkExperience;
+
+
