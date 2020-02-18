@@ -24,7 +24,6 @@ export const Prueba2 = () => {
     <div>
       <Router>
         <Link to="/"><button className="btnColor col-2">Atrás</button></Link>
-        <button className="btnColor col-2">Guardar</button>
         <button className="btnColor col-2">Visualizar CV</button>
         <Switch>
           <Route exact path="/educación" component={Input} />

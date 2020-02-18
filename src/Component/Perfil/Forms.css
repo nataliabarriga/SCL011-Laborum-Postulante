@@ -4,7 +4,6 @@
   font-weight: 600;
   font-size: 21px;
   line-height: 27px;
-  display: flex;
   align-items: center;
   color: #00BCA0;
 }
@@ -15,14 +14,12 @@
   font-weight: 600;
   font-size: 10px;
   line-height: 13px;
-  display: flex;
   align-items: center;
   color: #5E807F;
 }
 
 input {
   position: relative;
-  display: flex;
   justify-content: left;
   background: #FFFFFF;
   border: 1px solid #CEF8ED;

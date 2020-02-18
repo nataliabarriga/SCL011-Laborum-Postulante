@@ -1,28 +1,12 @@
 import React from 'react';
-import db from '../ConfigFirebase/FirebaseInit';
-import { useMyContext } from './Provider';
-import { Prueba2 } from './router';
-import './Forms.css';
+import { Router, Link, Switch, Route } from 'react-router-dom';
+import db from '../../ConfigFirebase/FirebaseInit';
 
+import { useMyContext } from '../Provider';
+import ProfileThree from '../../Views/ProfileThree';
 
 function WorkExperience() {
   const [myState, dispatch] = useMyContext();
-
-
-const ButtonFour = () => {
-  return (
-    <div>
-      <Router>
-        <Link to="/"><button className="btnColor col-2">Atrás</button></Link>
-        <button className="btnColor col-2">Guardar</button>
-        <Link to="/"><button onclikc={sendFirebase}className="btnColor col-2">Visualizar CV</button></Link>
-        <Switch>
-          <Route exact path="/" component={} />
-        </Switch>
-      </Router>
-    </div>
-  );
-};
 
   const sendFirebase = () => {
     db.collection('profilePostulante').add({
@@ -55,6 +39,21 @@ const ButtonFour = () => {
       .catch((error) => {
         console.error('Error adding document: ', error);
       });
+  };
+
+  const ButtonsFour = () => {
+    return (
+      <div>
+        <Router>
+          <Link to="/ProfileThree"><button className="btnColor col-2">Atrás</button></Link>
+          <button className="btnColor col-2">Guardar</button>
+          <Link to="/"><button type="submit" onclikc={sendFirebase} className="btnColor col-2">Visualizar CV</button></Link>
+          <Switch>
+            <Route exact path="/ProfileThree" component={ProfileThree} />
+          </Switch>
+        </Router>
+      </div>
+    );
   };
 
   const onChange = (event) => {
@@ -93,7 +92,7 @@ const ButtonFour = () => {
         onChange={onChange}
       />
 
-        <p className="labelComponent">Cargo</p>
+      <p className="labelComponent">Cargo</p>
       <input
         type="text"
         name="workTitle"
@@ -119,11 +118,9 @@ const ButtonFour = () => {
 
       <button type="submit">Agregar nueva experiencia laboral</button>
 
-      <ButtonFour />
+      <ButtonsFour />
     </div>
   );
 }
 
 export default WorkExperience;
-
-

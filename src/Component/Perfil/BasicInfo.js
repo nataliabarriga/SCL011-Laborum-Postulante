@@ -1,8 +1,8 @@
 import React from 'react';
 // import db from '../ConfigFirebase/FirebaseInit';
-import { useMyContext } from './Provider';
+import { useMyContext } from '../Provider';
 
-const BasicInformation = () => {
+const BasicInfo = () => {
   const [myState, dispatch] = useMyContext();
 
   // const sendFirebase = () => {
@@ -77,4 +77,4 @@ const BasicInformation = () => {
   );
 };
 
-export default BasicInformation;
+export default BasicInfo;

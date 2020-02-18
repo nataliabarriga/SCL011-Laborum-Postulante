@@ -1,11 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './Sidebar.css';
 import { Link } from 'react-router-dom';
-
 function Sidebar() {
   return (
-    <section>
       <div className="sidebar col-3">
         <nav>
           <ul>
@@ -52,8 +49,6 @@ function Sidebar() {
           </ul>
         </nav>
       </div>
-    </section>
   );
 }
-
 export default Sidebar;

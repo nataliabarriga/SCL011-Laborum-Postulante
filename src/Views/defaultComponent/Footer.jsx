@@ -1,14 +1,11 @@
 import React from 'react';
 import './Footer.css';
-
-const Footer = () => {
-  return (
-    <footer className="container_footer col-10">
-      <div className="text_footer">
-        <p>©2020 Powered by Hiring Room, todos los derechos reservados.</p>
-      </div>
-      <div className="icons_footer">
-        <svg
+const Footer = () =>{
+  return(
+    <footer className="col-8">
+      <p className="text_footer"> ©2020 Powered by Hiring Room, todos los derechos reservados. </p>
+      <div>
+      <svg
           className="icon-footer"
           width="25"
           height="25"
@@ -36,7 +33,6 @@ const Footer = () => {
             fill="#00BCA0"
           />
         </svg>
-
         <svg
           className="icon-footer"
           width="25"
@@ -54,7 +50,6 @@ const Footer = () => {
         </svg>
       </div>
     </footer>
-  );
-};
-
+  )
+}
 export default Footer;

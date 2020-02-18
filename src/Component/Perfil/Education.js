@@ -1,8 +1,6 @@
 import React from 'react';
 // import db from '../ConfigFirebase/FirebaseInit';
-import { useMyContext } from './Provider';
-import { Prueba3 } from './router';
-
+import { useMyContext } from '../Provider';
 
 
 function Education() {
@@ -85,12 +83,10 @@ function Education() {
         <select  className="selectComponent col-4">
           <option>Area 1</option>
           <option>Area 2</option>
-           <option>Area 3</option>
+          <option>Area 3</option>
         </select>
-       
 
       <button type="submit">Agregar nueva Educación</button>
-      <Prueba3 />
 
     </div>
   );
