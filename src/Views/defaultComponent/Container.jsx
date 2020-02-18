@@ -7,7 +7,6 @@ const Container = () => {
     <div className="col-8 container">
       <div>
         <ProfileOne/>
-        OFERTAS LABORALES
       </div>
     </div>
   );
