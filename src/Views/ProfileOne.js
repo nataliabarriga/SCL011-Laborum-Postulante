@@ -6,13 +6,11 @@ import ButtonsOne from '../Component/Perfil/ButtonsOne';
 
 const ProfileOne = () => {
   return (
-    <div>
       <div>
         <BasicInfo />
         <AboutYou />
         <ButtonsOne />
       </div>
-    </div>
   );
 };
 

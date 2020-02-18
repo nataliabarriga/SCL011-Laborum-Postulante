@@ -49,7 +49,6 @@ const BasicInfo = () => {
       />
 
       <p className="labelComponent">Apellidos </p>
-
       <input
         type="text"
         name="lastName"
@@ -58,10 +57,10 @@ const BasicInfo = () => {
       />
 
       <p className="labelComponent">Ciudad, Región, País</p>
-
       <input
         type="text"
         name="city"
+
         className="input col-4"
         onChange={onChange}
       />
@@ -73,9 +72,9 @@ const BasicInfo = () => {
         className="input col-2"
         onChange={onChange}
       />
-
     </div>
   );
 };
 
 export default BasicInfo;
+

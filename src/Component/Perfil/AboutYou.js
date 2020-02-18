@@ -2,6 +2,7 @@ import React from 'react';
 import { useMyContext } from '../Provider';
 import './Forms.css';
 
+
 const AboutYou = () => {
   const [myState, dispatch] = useMyContext();
   const onChange = (event) => {
@@ -29,6 +30,7 @@ const AboutYou = () => {
         <option>Empleado</option>
         <option>Independiente</option>
       </select>
+
     </div>
 
   );

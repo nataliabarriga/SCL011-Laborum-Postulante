@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+
 const Footer = () =>{
   return(
     <footer className="col-8">
@@ -33,6 +34,7 @@ const Footer = () =>{
             fill="#00BCA0"
           />
         </svg>
+
         <svg
           className="icon-footer"
           width="25"
@@ -52,4 +54,5 @@ const Footer = () =>{
     </footer>
   )
 }
+
 export default Footer;

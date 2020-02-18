@@ -5,6 +5,7 @@ import db from '../../ConfigFirebase/FirebaseInit';
 import { useMyContext } from '../Provider';
 import ProfileThree from '../../Views/ProfileThree';
 
+
 function WorkExperience() {
   const [myState, dispatch] = useMyContext();
 
@@ -45,9 +46,11 @@ function WorkExperience() {
     return (
       <div>
         <Router>
+
           <Link to="/ProfileThree"><button className="btnColor col-2">Atrás</button></Link>
           <button className="btnColor col-2">Guardar</button>
           <Link to="/"><button type="submit" onclikc={sendFirebase} className="btnColor col-2">Visualizar CV</button></Link>
+
           <Switch>
             <Route exact path="/ProfileThree" component={ProfileThree} />
           </Switch>
@@ -66,6 +69,7 @@ function WorkExperience() {
 
   return (
     <div>
+
       <p className="titleComponent">Experiencia Laboral</p>
       <p className="labelComponent">Nombre Institución</p>
       <input

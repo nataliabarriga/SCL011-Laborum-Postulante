@@ -8,6 +8,21 @@ import './Forms.css';
 function WorkExperience() {
   const [myState, dispatch] = useMyContext();
 
+  const ButtonsFour = () => {
+    return (
+      <div>
+        <Router>
+          <Link to="/"><button>Atrás</button></Link>
+          <button type="submit">Guardar</button>
+          <Link to="/"><button onClick={sendFirebase}>Visualizar CV</button></Link>
+          <Switch>
+            <Route exact path="/" component={} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  };
+
 
 const ButtonFour = () => {
   return (
@@ -120,6 +135,7 @@ const ButtonFour = () => {
       <button type="submit">Agregar nueva experiencia laboral</button>
 
       <ButtonFour />
+
     </div>
   );
 }
