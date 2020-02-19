@@ -138,7 +138,7 @@ const JobsView = () => {
                 </section>
 
               </div>
-              <hr className="line" />
+              <hr className="line"/>
             </div>
           </div>
         </div>
