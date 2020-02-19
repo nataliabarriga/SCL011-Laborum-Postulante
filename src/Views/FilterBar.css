@@ -1,0 +1,53 @@
+.border {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerFilter {
+    height: 80px;
+    padding: 20px 30px;
+    background: #E5E5E5;
+    float: right;
+}
+
+.inputBorder {
+    height: 25px;
+    margin: 0 20px 0 0;
+    padding: 5px 20px;
+    background: #FFFFFF;
+    border: 1px solid #00BCA0;
+    border-radius: 6px;
+}
+
+.btnColor {
+    height: 35px;
+    border-radius: 5px;
+    background-color: #00BCA0;
+    color: white;
+    border: none;
+    font-family: 'Mada', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Mada', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #00BCA0;
+}
+
+.itemGreen {
+    font-family: 'Mada', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #00BCA0;
+}
+
+.imgIcon {
+    width: 20px;
+}

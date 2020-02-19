@@ -22,5 +22,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "object-curly-newline": ["error", { "multiline": true, "minProperties": 4 }]
   },
 };

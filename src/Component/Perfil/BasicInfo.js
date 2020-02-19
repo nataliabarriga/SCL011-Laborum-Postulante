@@ -1,8 +1,9 @@
 import React from 'react';
 // import db from '../ConfigFirebase/FirebaseInit';
-import { useMyContext } from './Provider';
+import { useMyContext } from '../Provider';
+import './Forms.css';
 
-const BasicInformation = () => {
+const BasicInfo = () => {
   const [myState, dispatch] = useMyContext();
 
   // const sendFirebase = () => {
@@ -48,7 +49,6 @@ const BasicInformation = () => {
       />
 
       <p className="labelComponent">Apellidos </p>
-
       <input
         type="text"
         name="lastName"
@@ -57,10 +57,10 @@ const BasicInformation = () => {
       />
 
       <p className="labelComponent">Ciudad, Región, País</p>
-
       <input
         type="text"
         name="city"
+
         className="input col-4"
         onChange={onChange}
       />
@@ -72,9 +72,9 @@ const BasicInformation = () => {
         className="input col-2"
         onChange={onChange}
       />
-
     </div>
   );
 };
 
-export default BasicInformation;
+export default BasicInfo;
+

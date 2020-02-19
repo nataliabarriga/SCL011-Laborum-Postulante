@@ -1,0 +1,259 @@
+.buttonback{
+background: #00BCA0;
+border-radius: 5px;
+width: 125px;
+height: 30px;
+font-family: Mada;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.download{
+background: #00BCA0;
+border-radius: 6px;
+font-family: Mada;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 27px;
+align-items: center;
+color: #FFFFFF;
+width: 151px;
+height: 43px;
+margin-left: 16px;
+display: flex;
+}
+
+.view{
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #335453;
+  background: #DEE5E5;
+  border-radius: 6px;
+  width: 409px;
+  height: 43px;
+  margin: 0px;
+  padding-right: 28px;
+  }
+  
+  #headerCv{
+    display: flex;
+    width: 922px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+
+.nameUser , .lastName{  
+font-family: Mada;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 27px;
+display: flex;
+align-items: center;
+color :#2A303A;
+width: 749px;
+height: 43;
+margin-bottom: 50px;
+}
+
+.emailUser{
+font-family: Mada;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #00BCA0;
+
+}
+
+.titleAboutMe{
+font-family: Mada;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #335453;
+margin-top:25px;
+margin-bottom: 3px;
+}
+
+.aboutMe{
+font-family: Mada;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+color: #2A303A;
+width: 249px;
+text-align: justify;
+}
+
+.titleGeneric {
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  align-items: center;
+  color: #00BCA0;
+  margin-top:0px
+}
+
+.nameWorkInstitution , .nameInstitution{
+font-family: Mada;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 27px;
+display: flex;
+align-items: center;
+color: #6E948B;
+margin-bottom: 10px;
+width: 246px;
+height: 43px;
+margin-bottom: 6px;
+margin-top: 5px;
+}
+
+#workTitle , .educationTitle{
+font-family: Mada;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #335453;
+margin-bottom: 5px;
+margin-top: 0px;
+
+}
+
+.workDescription , .educationDescription{
+font-family: Mada;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+color: #2A303A;
+margin-left: 0px;
+margin-top:0px
+}
+
+.containerCv{
+background: #FFFFFF;
+width: 922px;
+padding: 18px 30px 19px 20px;
+border: 1px solid;
+
+}
+
+.containerInfo{
+  display: flex;
+  flex-direction: row;
+}
+
+#containerExperience{
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+
+.city , .emailUser ,.phone ,.dateOfBirth{
+  font-family: Mada;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #00BCA0;
+margin-top: 0px;
+margin-left: 10px;
+
+}
+
+.sectionDate{
+  float :left
+}
+
+.sectionDescription{
+  justify-content: center;
+}
+
+.headboard{
+  width: 749px;
+  height: 43;
+}
+
+.line{
+  border: 1px solid #DEE5E5;
+}
+.email{
+  display: flex;
+  flex-direction: row;
+}
+
+.svg{
+  margin-top: 5px;
+  margin-left: 10px
+}
+
+.workSince , .educationSince{
+ font-family: Mada;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+align-items: center;
+color: #2A303A;
+margin-top: 10px;
+width: 246px;
+}
+
+.containerDataUser{
+  display: flex;
+  flex-direction: row;
+}
+.sectionDate{
+  margin-top: 0px;
+}
+
+.viewDowload{
+  display: flex;
+    display: flex;
+    width: 922px;
+    justify-content: flex-end;
+
+}
+
+.svgJob , .svgEducation{
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.svgView{
+  padding: 14px  14px 14px 28px;
+}
+
+.svgDowload{
+ padding: 8px 6px 11px 11px;
+}
