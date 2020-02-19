@@ -128,3 +128,7 @@ p {
     margin-top: 240px;
     z-index: -1;
 }
+
+.container-title-registry h3{
+    font-size: 20px;   
+}
