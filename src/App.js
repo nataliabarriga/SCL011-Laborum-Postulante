@@ -1,4 +1,4 @@
-//aca estan las rutas de prueba para pasar el login 
+// aca estan las rutas de prueba para pasar el login 
 
 /* import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Views/Home';
@@ -16,8 +16,7 @@ import Home from './Views/defaultComponent/Home';
 
 
 function App() {
-  return (
-    /*
+  return (/*
         <header className='App-header'>
         <BrowserRouter>
           <React.Fragment>
@@ -30,7 +29,6 @@ function App() {
    */
 
 
-
     <div className="App">
       <BrowserRouter>
         <ProviderContext>
@@ -40,11 +38,13 @@ function App() {
           </Switch> */}
         </ProviderContext>
       </BrowserRouter>
+      {/*     <ProviderContext>
+        <Registry></Registry>
+      </ProviderContext> */}
+
     </div>
 
   );
 }
 
 export default App;
-
-

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
+
+.container-principal{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+.logoLaboratoria{
+    width: 226px;
+    margin-top: 44px;
+}
+
+.container-title-registry, .title-label, .email, .password, .institution, h5{
+    font-family: 'Mada';
+    font-style: normal;
+    color: #2A303A;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.email, .password, .institution {
+    background: #FFFFFF;
+/* Secuandario 2 */
+    border: 1px solid #9DC5BB;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    width: 263px;
+    height: 37px;
+    font-size: 9px;
+}
+
+.btn-create-account{
+    border: 01px solid #00BCA0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+    width:264px;
+    height: 41px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #00BCA0;
+}
+
+
+.container-form {
+    margin-left: 20px;
+}
+
+.img-laborum{
+    position: absolute;
+    width: 354px;
+    height: 355px;
+    left: 293px;
+    top: 175px;
+
+}
+
+.container-background{
+    position: absolute;
+    width: 640px;
+    height: 531px;
+    left: 640px;
+    top: 95px;    
+    background: #FFE521;
+    z-index: -2;
+}
+
+
+.vector {
+    margin-left: 25px;
+   }
+
+.vector-transparent, .vector-one,.vector {
+    width: 91px;
+    position: absolute;
+}
+.vector-transparent {
+    margin-left: 79px;
+}
+.vector-one {
+    margin-left: 134px;
+}
+
+.vector-transparent-one, .vector-transparent-two, .vector-two {
+    width: 91px;
+    position: absolute;
+    margin-top: 382px;
+}
+.vector-transparent-one{
+    margin-left: 422px;
+}
+
+.vector-two {
+    margin-left: 478px;    
+}
+
+.vector-transparent-two{
+    margin-left: 532px;
+}
+
+p {
+
+    position: absolute;
+    width: 440px;
+    height: 99px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    margin-left:75px;
+    margin-top: 166px;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.green-bar{
+    position: absolute;
+    width: 389px;
+    height: 24px;
+    margin-left: 75px;
+    margin-top: 240px;
+    z-index: -1;
+}
