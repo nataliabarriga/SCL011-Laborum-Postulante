@@ -1,9 +1,6 @@
 // aca estan las rutas de prueba para pasar el login 
 
-/* import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './Views/Home';
-import Login from "./Component/Login";
-import React from "react";
+/* import Login from "./Component/Login";
 import RegistroPrueba from './Component/RegistroPrueba';
  */
 
@@ -48,3 +45,18 @@ function App() {
 }
 
 export default App;
+
+
+// function App() {
+//   return (
+//     <div className="App">
+
+//       <ProviderContext>
+//         <Registry></Registry>
+//       </ProviderContext>
+
+//     </div>
+//   );
+// }
+
+// export default App;
