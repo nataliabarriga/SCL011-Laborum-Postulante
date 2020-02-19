@@ -12,7 +12,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ProviderContext } from './Component/Provider';
 
 import './App.css';
-
 import Home from './Views/defaultComponent/Home';
 
 
