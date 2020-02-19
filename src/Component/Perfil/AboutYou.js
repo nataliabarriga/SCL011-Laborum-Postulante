@@ -1,8 +1,9 @@
 import React from 'react';
-import { useMyContext } from './Provider';
+import { useMyContext } from '../Provider';
 import './Forms.css';
 
-const AbautMe = () => {
+
+const AboutYou = () => {
   const [myState, dispatch] = useMyContext();
   const onChange = (event) => {
     dispatch({
@@ -23,15 +24,16 @@ const AbautMe = () => {
         onChange={onChange}
       />
 
-      <p className="labelComponent">Situacíon laboral Actual</p>
+      <p className="labelComponent">Situación laboral Actual</p>
       <select className="selectComponent col-4">
         <option>Estudiante</option>
-        <option>Estudiante 2</option>
-        <option>Estudiate 3</option>
+        <option>Empleado</option>
+        <option>Independiente</option>
       </select>
+
     </div>
 
   );
 };
 
-export default AbautMe;
+export default AboutYou;

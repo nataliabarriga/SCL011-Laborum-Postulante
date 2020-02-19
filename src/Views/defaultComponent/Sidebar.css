@@ -1,0 +1,88 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top:100px;
+  font-family: 'Mada', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background: #2A303A;
+  color: #CEF8ED;
+  border-top-right-radius: 90px;
+}
+
+.star-icon {
+  height: 14px;
+  width: auto;
+  margin-right: 10px;
+}
+nav a:hover {
+  color: #FFBD3A;
+  font-weight: bold;
+}
+nav a:hover path{
+  fill: #FFBD3A;
+}
+nav a:active path {
+  fill: #01F0D1;
+}
+nav a:active {
+  font-weight: bold;
+  color: #01F0D1;
+}
+
+nav ul  {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 200px;
+}
+
+/* nav button  {
+  align-content: center;
+  margin-top: 15%;
+  margin-left: 20%;
+} */
+
+nav li {
+  list-style: none;
+  padding: 1.5em 0;
+  margin-left: 5%;
+}
+
+
+nav li a {
+  color: #cef8ed;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-second-little {
+  -webkit-appearance: none !important;
+  color: #00BCA0;
+  padding: 8px 15px;
+  margin-top: 50px;
+  font-weight: bold;
+  background-color: transparent;
+  border: solid 1px #00BCA0;
+  border-radius: 5px;
+  align-content: center;
+  margin-top: 15%;
+  margin-left: 20%;
+}
+
+.btn-second-little:hover{
+  color: #FFBD3A;
+  border: solid 1px #FFBD3A;
+}
+
+.btn-second-little:active {
+  color:  #6BFFFF;
+  font-weight: bold;
+  border: solid 1px #6BFFFF;
+}
+
