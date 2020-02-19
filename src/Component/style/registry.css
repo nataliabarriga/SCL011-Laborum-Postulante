@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
 
+.container-principal{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
 .logoLaboratoria{
-    width: 23%;
-    margin-top: 7%;
+    width: 226px;
+    margin-top: 44px;
 }
 
-.container-title-registry{
+.container-title-registry, .title-label, .email, .password, .institution, h5{
     font-family: 'Mada';
     font-style: normal;
     color: #2A303A;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .email, .password, .institution {
@@ -16,107 +23,108 @@
 /* Secuandario 2 */
     border: 1px solid #9DC5BB;
     border-radius: 5px;
-    margin-bottom: 2%;
-}
-
-.title-label{
-    font-family: Mada;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 10px;
-/* identical to box height, or 137% */
-    display: flex;
-    align-items: center;
-/* Negro impuro */
-    color: #2A303A;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    width: 263px;
+    height: 37px;
+    font-size: 9px;
 }
 
 .btn-create-account{
-    border: 1px solid #00BCA0;
-box-sizing: border-box;
-border-radius: 5px;
-display: block;
+    border: 01px solid #00BCA0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+    width:264px;
+    height: 41px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #00BCA0;
 }
 
-.container-principal{
-    display: flex;
-    width: 100%;
-}
 
 .container-form {
-    margin-left: 3%;
+    margin-left: 20px;
 }
 
 .img-laborum{
-    width: 100%;
-    margin-left: -66%;
-    margin-top: 80%;
+    position: absolute;
+    width: 354px;
+    height: 355px;
+    left: 293px;
+    top: 175px;
+
 }
 
 .container-background{
-    width: 40%;
-    margin-right: 12%;
+    position: absolute;
+    width: 640px;
+    height: 531px;
+    left: 640px;
+    top: 95px;    
+    background: #FFE521;
+    z-index: -2;
 }
 
-.background-yellow {
-    width: 80%;
-    position: absolute;
-    z-index: -1;
-    height: 81%;
-    margin-left: -20%;
-    margin-top: 4%;
-}
 
 .vector {
-    width: 7%;
-    position: absolute;
-    margin-top: 5%;
-    margin-left: -17%;
+    margin-left: 25px;
    }
 
-.vector-transparent{
-    width: 7%;
+.vector-transparent, .vector-one,.vector {
+    width: 91px;
     position: absolute;
-    margin-left: -13%;
-    margin-top: 5%
 }
-
+.vector-transparent {
+    margin-left: 79px;
+}
 .vector-one {
-    width: 7%;
-    position: absolute;
-    margin-left: -9%;
-    margin-top: 5%
+    margin-left: 134px;
 }
 
-.vector-transparent-one {
-    width: 7%;
+.vector-transparent-one, .vector-transparent-two, .vector-two {
+    width: 91px;
     position: absolute;
-    margin-left: 51%;
-    margin-top: 49%;
+    margin-top: 382px;
+}
+.vector-transparent-one{
+    margin-left: 422px;
 }
 
 .vector-two {
-    width: 7%;
-    position: absolute;
-    margin-left: 47%;
-    margin-top: 49%;
+    margin-left: 478px;    
 }
 
-
 .vector-transparent-two{
-    width: 7%;
-    position: absolute;
-    margin-left: 43%;
-    margin-top: 49%;
+    margin-left: 532px;
 }
 
 p {
-    font-family: Mada;
+
     position: absolute;
+    width: 440px;
+    height: 99px;
+    font-family: Mada;
     font-style: normal;
     font-weight: bold;
     align-items: center;
-    margin-left: 2%;
-    margin-top: 20%;
+    margin-left:75px;
+    margin-top: 166px;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.green-bar{
+    position: absolute;
+    width: 389px;
+    height: 24px;
+    margin-left: 75px;
+    margin-top: 240px;
+    z-index: -1;
 }

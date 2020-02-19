@@ -8,6 +8,7 @@ import PersonalInformation from '../Views/personalnformationView';
 export const Prueba = () => {
   return (
     <div>
+
       <Router>
         <Link to="/educación"><button>Siguente</button></Link>
         <Switch>

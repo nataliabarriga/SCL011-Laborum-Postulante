@@ -8,11 +8,11 @@ import Header from './Views/Header';
 function App() {
   return (
     <div className="App">
-      <Header />
+
       <ProviderContext>
-        <PersonalInformation></PersonalInformation>
+        <Registry></Registry>
       </ProviderContext>
-    <Registry></Registry>
+
     </div>
   );
 }
