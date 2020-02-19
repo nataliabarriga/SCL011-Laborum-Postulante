@@ -1,5 +1,8 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
-import { Router, Link, Switch, Route } from 'react-router-dom';
+import {
+  Router, Link, Switch, Route,
+} from 'react-router-dom';
 import db from '../../ConfigFirebase/FirebaseInit';
 
 import { useMyContext } from '../Provider';
@@ -83,7 +86,6 @@ function WorkExperience() {
       <input
         type="date"
         name="workSince"
-        className="labelComponent"
         className="input col-2"
         onChange={onChange}
       />
@@ -100,7 +102,6 @@ function WorkExperience() {
       <input
         type="text"
         name="workTitle"
-        className="labelComponent"
         className="input col-5"
         onChange={onChange}
       />

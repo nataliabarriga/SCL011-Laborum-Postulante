@@ -51,3 +51,12 @@
     margin: 15px;
     float: right;
   }
+
+  svg {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  path {
+    fill:  #00BCA0;
+  }

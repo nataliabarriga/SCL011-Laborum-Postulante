@@ -4,11 +4,7 @@ import { ProviderContext } from './Component/Provider';
 import './App.css';
 // import FilterBar from './Views/FilterBar';
 import Home from './Views/defaultComponent/Home';
-//import ContainerForm from './Views/ContainerForm';
-// import Perfil from './Component/personalInformation';
-// import Registry from './Component/registry';
-// import PersonalInformation from './Views/PersonalInfo';
-// import Sidebar from './Views/Sidebar';
+
 
 function App() {
   return (
