@@ -3,12 +3,10 @@ import { useMyContext } from '../Provider';
 import './Forms.css';
 
 const OtherProfiles = () => {
-
   const [myState, dispatch] = useMyContext();
-
   const onChange = (event) => {
     dispatch({
-      type: 'ADD_INFORMATION',
+      type: 'ADD_CONTACT',
       field: event.target.name,
       value: event.target.value,
     });

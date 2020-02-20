@@ -10,11 +10,11 @@ const Reducer = (state, action) => {
       return {
         stateId: [...state.stateId, action.payload],
       };
-    // case 'ADD_WORKEXPERIENCE':
-    //   return {
-    //     ...state,
-    //     [action.field]: action.value,
-    //   };
+    case 'ADD_CONTACT':
+    return {
+        ...state,
+        [action.field]: action.value,
+   };
     case 'ADD_EDUCATION':
       return {
         ...state,

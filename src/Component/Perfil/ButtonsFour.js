@@ -21,20 +21,19 @@ const ButtonsFour = () => {
       city: myState.city,
       dateOfBirth: myState.dateOfBirth,
       stateId: myState.stateId,
-      aboutMe: myState.aboutMe,
-      actualJob: myState.actualJob,
+      abautMe: myState.abautMe,
       nameInstitution: myState.nameInstitution,
-      mail: myState.mail,
+      urlLinkedin: myState.urlLinkedin,
+      /* mail: myState.mail,
       backupMail: myState.backupMail,
       phone: myState.phone,
-      backupPrefixPhone: myState.backupPrefixPhone,
       fullTime: myState.fullTime,
       partTime: myState.partTime,
       firstJob: myState.firstJob,
       practice: myState.practice,
-      urlLinkedin: myState.urlLinkedin,
+      
       urlPortafolio: myState.urlPortafolio,
-      urlRrss: myState.urlRrss,
+      urlRrss: myState.urlRrss, */
       educationTitle: myState.educationTitle,
       educationSince: myState.educationSince,
       educationUntil: myState.educationUntil,
@@ -61,10 +60,10 @@ const ButtonsFour = () => {
 
   return (
     <div>
+       <button onClick={sendFirebase} className="btnColor col-2">Visualizar CV</button>
       <Router>
         <Link to="/ProfileThree"><button className="btnColor col-2">Atrás</button></Link>
         <button type="submit" className="btnColor col-2">Guardar</button>
-        <Link to="/"><button type="submit" onClick={sendFirebase} className="btnColor col-2">Visualizar CV</button></Link>
 
         <Switch>
           <Route exact path="/ProfileThree" component={ProfileThree} />
