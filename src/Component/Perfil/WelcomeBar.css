@@ -1,0 +1,27 @@
+.welcomebar-container {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0px 20px;
+  border: 1px solid black;
+}
+
+.inputBorder {
+  height: 25px;
+  margin: 0 20px 0 0;
+  padding: 5px 20px;
+  background: #FFFFFF;
+  border: 1px solid #00BCA0;
+  border-radius: 6px;
+}
+
+.welcome-name {
+  font-family: 'Mada', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #00BCA0;
+}
