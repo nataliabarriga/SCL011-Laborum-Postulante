@@ -1,5 +1,4 @@
 // aca estan las rutas de prueba para pasar el login 
-
 /* import Login from "./Component/Login";
 import RegistroPrueba from './Component/RegistroPrueba';
  */
@@ -7,10 +6,8 @@ import RegistroPrueba from './Component/RegistroPrueba';
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ProviderContext } from './Component/Provider';
-
 import './App.css';
 import Home from './Views/defaultComponent/Home';
-
 
 function App() {
   return (/*
@@ -24,7 +21,6 @@ function App() {
         </BrowserRouter>
       </header>
    */
-
 
     <div className="App">
       <BrowserRouter>
@@ -40,12 +36,22 @@ function App() {
       </ProviderContext> */}
 
     </div>
-
   );
 }
 
 export default App;
 
+    /*
+        <header className='App-header'>
+        <BrowserRouter>
+          <React.Fragment>
+            <Route path='/Home' component={Home}/>
+            <Route path='/Login' component={Login}/>
+            <Route path='/RegistroPrueba' component={RegistroPrueba}/>
+          </React.Fragment>
+        </BrowserRouter>
+      </header>
+   */
 
 // function App() {
 //   return (
