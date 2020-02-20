@@ -1,50 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
-
-
 .App-header {
-  width: 100%;
-  height: 100vh;
-  background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
 }
 
-.container-principal{
-    display: flex;    
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
 }
 
-.logoLaboratoria{
+.logoLaboratoria {
     width: 250px;
     margin-top: 45px;
 }
 
-.container-title-registry, .title-label, .email, .password, .institution, h5{
+.container-title-registry, .title-label, .email, .password, .institution, h5 {
     font-family: 'Mada';
     font-style: normal;
     color: #2A303A;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    text-align: left;
 }
 
 .email, .password, .institution {
     background: #FFFFFF;
-/* Secuandario 2 */
     border: 1px solid #9DC5BB;
     border-radius: 5px;
-    margin-bottom: 40px;
-    margin-left: 0px;
+    margin: 0;
     width: 263px;
     height: 37px;
     font-size: 9px;
+    text-align:left ;
 }
 
-.btn-create-account{
+.btn-create-account {
     border: 01px solid #00BCA0;
     box-sizing: border-box;
     border-radius: 5px;
     display: block;
     margin-left: 0px;
     margin-top: 20px;
-    width:264px;
+    width: 264px;
     height: 41px;
     font-family: Mada;
     font-style: normal;
@@ -55,30 +56,61 @@
 }
 
 .container-form {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
-.img-laborum{
+.border {
+    margin: -400px 0 0 400px;
+}
+
+p {
     position: absolute;
-    width: 354px;
-    height: 355px;
-    left: 293px;
-    top: 175px;
-
+    width: 440px;
+    height: 99px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 166px;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
 }
 
-.container-background{
+.green-bar {
     position: absolute;
-    width: 640px;
-    height: 531px;
-    left: 640px;
-    top: 95px;    
-    background: #FFE521;
-    z-index: -2;
+    width: 389px;
+    height: 24px;
+    margin-left: 75px;
+    margin-top: 240px;
+    z-index: -1;
 }
 
+.container-background {
+    margin: 0 0 0 200px;
+    float: right;
+}
 
-.vector {
+.registrate {
+    font-family: 'Mada', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    color: #2A303A;
+}
+
+.registro {
+    font-family: 'Mada', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27px;
+    color: #2A303A;
+}
+
+/* .vector {
     margin-left: 25px;
    }
 
@@ -108,32 +140,10 @@
 
 .vector-transparent-two{
     margin-left: 532px;
-}
+} 
 
-p {
-    position: absolute;
-    width: 440px;
-    height: 99px;
-    font-family: Mada;
-    font-style: normal;
-    font-weight: bold;
-    align-items: center;
-    margin-left:75px;
-    margin-top: 166px;
-    font-size: 36px;
-    line-height: 47px;
-    color: #000000;
-}
-
-.green-bar{
-    position: absolute;
-    width: 389px;
-    height: 24px;
-    margin-left: 75px;
-    margin-top: 240px;
-    z-index: -1;
-}
 
 .container-title-registry h3{
     font-size: 20px;   
 }
+*/

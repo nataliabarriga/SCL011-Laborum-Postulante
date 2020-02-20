@@ -1,13 +1,9 @@
 import React from 'react';
 import { auth } from '../ConfigFirebase/FirebaseInit';
-//import './style/registry.css';
+import './registry.css';
 import logo from '../img/logo.png';
 import laborum from '../img/laborum.png';
-import vector from '../img/Vector.png';
-import vector1 from '../img/Vector1.png';
-import vector3 from '../img/Vector3.png';
-import vector2 from '../img/Vector2.png';
-import rectangle from '../img/Rectangle-green.png'
+import yellowBox from '../img/home-lab.jpg';
 
 class Registry extends React.Component {
     handleChange = e => {
@@ -60,35 +56,28 @@ class Registry extends React.Component {
 
     render() {
         return (
-            <div className="container-principal">
-                <form className="container-form" onSubmit={this.handleSubmit} className="col-4">
+            <div className="container-principal col-12">
+                <form className="container-form col-4" onSubmit={this.handleSubmit}>
                     <div>
                         <img src={logo} alt="logo laboratoria" className="logoLaboratoria" />
-
                     </div>
                     <div className="container-title-registry">
-                        <h3>Registrate</h3><br />
-                    </div><h5>Registro</h5>
-                    <label className="title-label" >Correo</label>
+                        <h3 className="registrate">Registrate</h3>
+                    </div>
+                    <h5 className="registro col-2">Registro</h5>
+                    <label className="title-label col-2" >Correo</label>
                     <input onChange={this.handleChange} type="email" name="email" id="email" className="email" />
-                    <label className="title-label" >Contraseña</label>
+                    <label className="title-label col-2" >Contraseña</label>
                     <input onChange={this.handleChange} type="password" name="password" id="password" className="password" />
-                    <label className="title-label" >Institución</label>
+                    <label className="title-label col-2" >Institución</label>
                     <input onChange={this.handleChange} type="text" name="institution" id="institution" className="institution" />
                     <button onClick={this.handleClick} id="btnRegistry" className="btn-create-account">Crear cuenta</button>
                 </form>
-                <div>
+                <div className="border col-3">
                     <img src={laborum} alt="img laborum" className="img-laborum" />
                 </div>
                 <div className="container-background">
-                    <img src={vector} alt="vector rosado" className="vector" />
-                    <img src={vector1} alt="vector transparent " className="vector-transparent" />
-                    <img src={vector} alt="vector rosado" className="vector-one" />
-                    <p>Bolsa de empleos egresadas Laboratoria</p>
-                    <img src={rectangle} alt="barra verde" className="green-bar" />
-                    <img src={vector3} alt="vector transparent 2" className="vector-transparent-one" />
-                    <img src={vector2} alt="vector rosado" className="vector-two" />
-                    <img src={vector3} alt="vector transparent 2" className="vector-transparent-two" />
+                    <img src={yellowBox} alt='img Box' className="YellowBox" />
                 </div>
             </div >
         )

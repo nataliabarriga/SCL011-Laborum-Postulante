@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
-
 .container-principal {
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .logoLaboratoria{
