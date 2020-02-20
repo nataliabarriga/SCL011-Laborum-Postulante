@@ -8,6 +8,7 @@ import PersonalInformation from '../Views/PersonalInfo';
 export const Prueba = () => {
   return (
     <div>
+
       <Router>
         <Link to="/educacion"><button className="btnColor col-2">Siguiente</button></Link>
         <button type="submit" className="btnColor col-2">Guardar</button>
