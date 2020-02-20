@@ -1,6 +1,6 @@
 import React from 'react';
 import { auth } from '../ConfigFirebase/FirebaseInit';
-import './registry.css';
+//import './registry.css';
 import logo from '../img/logo.png';
 import laborum from '../img/laborum.png';
 import yellowBox from '../img/home-lab.jpg';
