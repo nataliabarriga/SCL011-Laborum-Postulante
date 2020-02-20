@@ -23,7 +23,7 @@ const initialState = {
   educationUntil: '',
   educationDescription: '',
   educationArea: '',
-  nameWorkInstitution:'',
+  nameWorkInstitution: '',
   workTitle: '',
   workSince: '',
   workUntil: '',
