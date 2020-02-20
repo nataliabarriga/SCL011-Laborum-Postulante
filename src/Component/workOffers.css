@@ -39,7 +39,7 @@
   font-weight: 600;
   font-size: 14px;
   margin-left: 23px;
-  margin-top: 50px;
+  margin-top: 40px;
   font-family: Mada;
 }
 .job-description{
@@ -55,6 +55,7 @@
     font-size: 12px;
     line-height: 16px;
     font-family: Mada;
+    margin: 8px;
 }
 .logoSize{
     position: absolute;
