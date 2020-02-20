@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import {
   BrowserRouter as Router, Route, Link, Switch,
 } from 'react-router-dom';

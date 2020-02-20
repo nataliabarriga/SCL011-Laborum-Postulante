@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable import/no-cycle */
 import {
   BrowserRouter as Router, Route, Link, Switch,
 } from 'react-router-dom';
@@ -10,9 +12,13 @@ const ButtonsTwo = () => {
   return (
     <div>
       <Router>
-        <Link to="/ProfileOne"><button className="btnColor col-2">Atrás</button></Link>
-        <button className="btnColor col-2">Guardar</button>
-        <Link to="/ProfileThree"><button className="btnColor col-2">Siguiente</button></Link>
+        <div>
+          <Link to="/ProfileOne"><button className="btnColor col-2">Atrás</button></Link>
+        </div>
+        <div>
+          <button type="submit" className="btnColor col-2">Guardar</button>
+          <Link to="/ProfileThree"><button className="btnColor col-2">Siguiente</button></Link>
+        </div>
         <Switch>
           <Route exact path="/ProfileOne" component={ProfileOne} />
           <Route exact path="/ProfileThree" component={ProfileThree} />
@@ -23,4 +29,3 @@ const ButtonsTwo = () => {
 };
 
 export default ButtonsTwo;
-
