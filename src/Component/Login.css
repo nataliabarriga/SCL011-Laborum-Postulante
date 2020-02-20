@@ -1,30 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
 
-.container-principal{
-    display: flex;
-    width: 100%;
-    height: 100%;
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
 }
+
 .logoLaboratoria{
-
-    width: 226px;
-  
+    width: 230px;
     margin-top: 10px;
-    left: 55px;
-    top: 89px;
-    
+    margin-left: 35px;
 }
 
-.container-title-login{
-    font-family: 'Mada';
-    font-style: normal;
-    color: #2A303A;
+.container-left{
+  width: 350px;
+  margin-left: 30px;
+  font-family: 'Mada';
+  color: #2A303A;
+}
+
+.container-left h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.container-left h5 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
 }
 
 .title-label{
-    position: absolute;
-    left: 0.38;
-    font-family: Mada;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -32,53 +43,40 @@
     display: flex;
     align-items: center;
     color: #2A303A;
-}
-
+    margin: 15px 15px 15px 0px;
+  }
 
 .form-control{
-  
- 
     width: 264px;
     height: 41px;
-  margin-top: 40px;
-
-
     background: #ffffff;
     border: 1px solid #9dc5bb;
     border-radius: 5px;
-    font-family: Mada;
-    
-}
-
-.container-lo{
-    margin-left: 30px;
+    font-family: 'Mada';
 }
 
 .btn-create-account{
     background-color: transparent;
     border: 01px solid #00BCA0;
-    box-sizing: border-box;
     border-radius: 5px;
-    display: block;
     margin-left: 0px;
     margin-top: 25px;
     width: 264px;
     height: 41px;
-    font-family: Mada;
+    font-family: 'Mada';
     font-style: normal;
     font-weight: bold;
-    font-size: 9px;
-    line-height: 16px;
+    font-size: 16px;
     color: #00BCA0;
 }
 
+.cuenta {
+  display: flex;
+  flex-direction: row;
+}
+
 .texto{
-    position: absolute;
-    left: 2.89%;
-    right: 84.84%;
-    top: 83.06%;
-    bottom: 10.42%;
-    font-family: Mada;
+    font-family: 'Mada';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -88,50 +86,31 @@
     color: #2A303A;   
 }
 .textoRegistry{
-    position: absolute;
-    left: 2.89%;
-    right: 84.84%;
-    top: 83.06%;
-    bottom: 10.42%;
-    font-family: Mada;
+    font-family: 'Mada';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #ffe521;
-   
-
+    color: #C78D00;
+    text-decoration: none;
+  
 }
 .cont-Img-Egresada{
     position: absolute;
     width: 264px;
     height: 264px;
-    left: 358px;
+    left: 320px;
     top: 213px;
 }
-
-
-
-
-
 
 .container-background{
    position: absolute;
    width: 640px;
    height: 531px;
-   left: 640px;
-   top: 95px;
-   background: #ffe521;
-}
-.background-yellow {
-    width: 80%;
-    position: absolute;
-    z-index: -1;
-    height: 81%;
-    margin-left: -20%;
-    margin-top: 4%;
+   left: 600px;
+   top: 35px;
 }
 
 
