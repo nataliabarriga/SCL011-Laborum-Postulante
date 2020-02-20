@@ -3,11 +3,13 @@ import Contact from '../Component/Perfil/Contact';
 import OtherProfiles from '../Component/Perfil/OtherProfiles';
 import Preferences from '../Component/Perfil/Preferences';
 import ButtonsTwo from '../Component/Perfil/ButtonsTwo';
+import WelcomeBar from '../Component/Perfil/WelcomeBar';
 
 const ProfileTwo = () => {
   return (
     <div>
       <div>
+        <WelcomeBar />
         <Contact />
         <OtherProfiles />
         <Preferences />
@@ -18,4 +20,3 @@ const ProfileTwo = () => {
 };
 
 export default ProfileTwo;
-
