@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
 import firebase from "firebase";
@@ -5,7 +6,7 @@ import "./Login.css";
 import logo from "../img/logo.png";
 import egresada from "../img/mono (1).png";
 import yellowBox from '../img/home-lab.jpg';
-import Registry from './registry'
+import Registry from './registry';
 
 const Login = props => {
   const singIn = (email, password) => {
@@ -33,17 +34,14 @@ const Login = props => {
 
   return (
     <div className="container-principal">
-      <div className='container-lo'>
-        <div>
-          <img src={logo} alt="logo laboratoria" className="logoLaboratoria" />
-        </div>
+      <div>
+        <img src={logo} alt="logo laboratoria" className="logoLaboratoria" />
+      </div>
 
-        <div className="container-title-login">
-          <h3>Conecta con ofertas exclusivas</h3>
-          <h5>Inicio sesión</h5>
-        </div>
+      <div className='container-left'>
+        <h3>Conecta con ofertas exclusivas</h3>
+        <h5>Inicio sesión</h5>
 
-        <form className="container-form" action="javascript:void(0)">
           <div className="col-md-3">
             <label className="title-label">Correo</label>
             <input
@@ -51,7 +49,7 @@ const Login = props => {
               type="Email"
               placeholder="Ingrese Correo"
               className="form-control"
-            ></input>
+            />
           </div>
 
           <div className="col-md-3">
@@ -61,23 +59,23 @@ const Login = props => {
               type="Password"
               placeholder="Ingrese Clave"
               className="form-control"
-            ></input>
+            />
           </div>
-
-          <div >recuerdame -- olvidaste tu contraseña</div>
+            <div>
+              <p>Recuerdame -- Olvidaste tu contraseña</p>
+            </div>
 
           <div className="col-md-3">
-            <button className="btn-create-account" onClick={handleClick}>
+            <button type="submit" className="btn-create-account" onClick={handleClick}>
               Inicia sesión
             </button>
-          </div>
 
-          <div>
-            <p className='texto'> no tienes cuenta
-           <Link to="/Registro" className='textoRegistry'>Registrate</Link></p>
+            <div className="cuenta">
+              <p className="texto">¿No tienes cuenta?</p>
+              <Link to="/Registro" className="textoRegistry">Registrate</Link>
+            </div>
           </div>
-        </form>
-      </div>
+        </div>
 
       <div className='cont-Img-Egresada'>
         <img src={egresada} alt="img laborum" className="img-Login" />
