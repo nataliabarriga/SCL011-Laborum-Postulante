@@ -2,7 +2,10 @@ import React from 'react';
 import './Container.css';
 import ProfileOne from "../ProfileOne"
 //import WorkOffers from '../../Component/workOffers'
+<<<<<<< HEAD
 
+=======
+>>>>>>> para bajar
 
 const Container = () => {
   return (
