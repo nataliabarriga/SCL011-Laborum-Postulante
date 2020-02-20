@@ -1,5 +1,5 @@
 import firebase from 'firebase/app';
-// import firebase from 'firebase'; 
+// import firebase from 'firebase';
 import 'firebase/firestore';
 import 'firebase/database';
 import 'firebase/auth';
@@ -15,7 +15,7 @@ firebase.initializeApp({
     measurementId: "G-MT17B4HRXW"
 })
 
-export const db = firebase.firestore();
+// export const db = firebase.firestore();
+let db = firebase.firestore()
 export const auth = firebase.auth();
 export default db;
-
