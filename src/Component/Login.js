@@ -3,10 +3,9 @@ import { withRouter, Link } from "react-router-dom";
 import firebase from "firebase";
 import "./Login.css";
 import logo from "../img/logo.png";
-
 import egresada from "../img/mono (1).png";
-
 import yellowBox from '../img/home-lab.jpg';
+import Registry from './registry'
 
 const Login = props => {
   const singIn = (email, password) => {
@@ -75,7 +74,7 @@ const Login = props => {
 
           <div>
             <p className='texto'> no tienes cuenta
-           <Link to="/RegistroPrueba" className='textoRegistry'>Registrate</Link></p>
+           <Link to="/Registro" className='textoRegistry'>Registrate</Link></p>
           </div>
         </form>
       </div>

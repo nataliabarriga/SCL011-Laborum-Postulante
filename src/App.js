@@ -1,69 +1,54 @@
-// aca estan las rutas de prueba para pasar el login 
-/* import Login from "./Component/Login";
-import RegistroPrueba from './Component/RegistroPrueba';
- */
+// Acá están las rutas de prueba para pasar el login 
+// import Login from "./Component/Login";
+// import RegistroPrueba from './Component/RegistroPrueba';
 
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ProviderContext } from './Component/Provider';
 import './App.css';
 import Home from './Views/defaultComponent/Home';
+import Begin from './Views/defaultComponent/Begin';
 
 
 function App() {
-  return (/*
-        <header className='App-header'>
-        <BrowserRouter>
-          <React.Fragment>
-            <Route path='/Home' component={Home}/>
-            <Route path='/Login' component={Login}/>
-            <Route path='/RegistroPrueba' component={RegistroPrueba}/>
-          </React.Fragment>
-        </BrowserRouter>
-      </header>
-   */
-
+  return (
     <div className="App">
       <BrowserRouter>
         <ProviderContext>
-          <Home />
-          {/* <Switch>
-            <Route exact path="/perfil" component={Perfil} />
-          </Switch> */}
+          <Begin />
         </ProviderContext>
       </BrowserRouter>
-      {/*     <ProviderContext>
-        <Registry></Registry>
-      </ProviderContext> */}
-
     </div>
   );
 }
 
 export default App;
 
-    /*
-        <header className='App-header'>
-        <BrowserRouter>
-          <React.Fragment>
-            <Route path='/Home' component={Home}/>
-            <Route path='/Login' component={Login}/>
-            <Route path='/RegistroPrueba' component={RegistroPrueba}/>
-          </React.Fragment>
-        </BrowserRouter>
-      </header>
-   */
 
-// function App() {
-//   return (
-//     <div className="App">
+/** Función de Registro Dani **/
+/*
+<ProviderContext>
+   <Registry></Registry>
+ </ProviderContext>
+*/
 
-//       <ProviderContext>
-//         <Registry></Registry>
-//       </ProviderContext>
 
-//     </div>
-//   );
-// }
+/** Función de Login Pao **/
+/*
+  <header className='App-header'>
+    <BrowserRouter>
+      <React.Fragment>
+        <Route path='/Home' component={Home}/>
+        <Route path='/Login' component={Login}/>
+        <Route path='/RegistroPrueba' component={RegistroPrueba}/>
+      </React.Fragment>
+    </BrowserRouter>
+  </header>
+*/
 
-// export default App;
+
+/*
+<Switch>
+  <Route exact path="/perfil" component={Perfil} />
+</Switch>
+ */

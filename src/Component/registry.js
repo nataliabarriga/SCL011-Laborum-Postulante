@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { auth } from '../ConfigFirebase/FirebaseInit';
 import './style/registry.css';
 import logo from '../img/logo.png';

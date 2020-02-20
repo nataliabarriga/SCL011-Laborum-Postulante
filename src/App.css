@@ -16,6 +16,7 @@
   }
 
   .App-header {
+    border: 1px solid black;
     background-color: white;
     min-height: 100vh;
     display: flex;

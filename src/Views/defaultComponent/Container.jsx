@@ -8,7 +8,7 @@ const Container = () => {
   return (
     <div className="col-8 container">
       <div>
-        /*<WorkOffers/>*/
+        {/*<WorkOffers/>*/}
         <ProfileOne />
       </div>
     </div>
