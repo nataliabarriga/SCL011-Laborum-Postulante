@@ -7,7 +7,8 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "build",
+    "site": "laborum-postulante",
     "ignore": [
       "firebase.json",
       "**/.*",
