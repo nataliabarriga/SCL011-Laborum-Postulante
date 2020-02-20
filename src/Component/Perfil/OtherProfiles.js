@@ -32,7 +32,7 @@ const OtherProfiles = () => {
       <p className="labelComponent">URL Portafolio (Behance, Dribbble, etc.)</p>
       <input
         type="text"
-        name="urlPortfolio"
+        name="urlPortafolio"
         className="input col-4"
         onChange={onChange}
       />

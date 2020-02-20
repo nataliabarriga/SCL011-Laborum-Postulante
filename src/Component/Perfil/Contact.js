@@ -8,7 +8,7 @@ const Contact = () => {
 
   const onChange = (event) => {
     dispatch({
-      type: 'ADD_INFORMATION',
+      type: 'ADD_CONTACT',
       field: event.target.name,
       value: event.target.value,
     });

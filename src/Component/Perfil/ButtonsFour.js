@@ -8,6 +8,7 @@ import {
 import db from '../../ConfigFirebase/FirebaseInit';
 import { useMyContext } from '../Provider';
 import ProfileThree from '../../Views/ProfileThree';
+import CV from '../cvProfile';
 
 
 const ButtonsFour = () => {
@@ -21,19 +22,18 @@ const ButtonsFour = () => {
       city: myState.city,
       dateOfBirth: myState.dateOfBirth,
       stateId: myState.stateId,
-      abautMe: myState.abautMe,
+      aboutMe: myState.aboutMe,
       nameInstitution: myState.nameInstitution,
       urlLinkedin: myState.urlLinkedin,
-      /* mail: myState.mail,
+      mail: myState.mail,
       backupMail: myState.backupMail,
       phone: myState.phone,
       fullTime: myState.fullTime,
       partTime: myState.partTime,
       firstJob: myState.firstJob,
       practice: myState.practice,
-      
-      urlPortafolio: myState.urlPortafolio,
-      urlRrss: myState.urlRrss, */
+      // urlPortafolio: myState.urlPortafolio,
+      urlRrss: myState.urlRrss,
       educationTitle: myState.educationTitle,
       educationSince: myState.educationSince,
       educationUntil: myState.educationUntil,
@@ -60,13 +60,14 @@ const ButtonsFour = () => {
 
   return (
     <div>
-       <button onClick={sendFirebase} className="btnColor col-2">Visualizar CV</button>
+       <button onClick={sendFirebase} className="btnColor col-2">Guardar</button>
       <Router>
         <Link to="/ProfileThree"><button className="btnColor col-2">Atrás</button></Link>
-        <button type="submit" className="btnColor col-2">Guardar</button>
+        <Link to="/CV"><button type="submit" className="btnColor col-2">Visualizar CV</button></Link>
 
         <Switch>
           <Route exact path="/ProfileThree" component={ProfileThree} />
+          <Route exact path="/CV" component={CV} />
         </Switch>
       </Router>
     </div>
