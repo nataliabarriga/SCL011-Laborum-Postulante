@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Mada:400,500,600,700&display=swap');
+.job-box{
+    z-index: 5000;
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 300px; */
+    flex-wrap: wrap;
+}
+.job-offer{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #8CAFAE;
+    border-radius: 6px;
+    margin: 12px;
+    width: 278px;
+    height: 221px;
+
+}
+.job-status{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: Mada;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ACB3B3;
+    height: 27px;
+    width: 120px;
+    margin: 20px 21px 0px 137px;
+    text-align: center;
+    border: none;
+    pointer-events: none;
+    align-items: center;
+     text-align: center;
+}
+
+.job-title{
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 23px;
+  margin-top: 50px;
+  font-family: Mada;
+}
+.job-description{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 23px;
+    align-items: center;
+    font-family: Mada;
+}
+.job-time{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Mada;
+}
+.logoSize{
+    position: absolute;
+    margin: 20px 20px;
+}
+.clockIcon .briefcaseIcon{
+    width: 10px;
+    height: 10px;
+}
+.iconPlace{
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.iconLocation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    margin: 0;
+}
+.star-icon2:active path {
+    fill: #FFBD3A;
+  }
+.star-icon2{
+    margin: 8px;
+    width:21px;
+    height:20px;
+  }
+.trash{
+    left: 63px;
+    border: none;
+    color: none;
+    padding: 0px;
+}
+.iconPlace2{
+    margin-left: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 85%;
+}
+.seeMore{
+  border: none;
+  padding: 0px;
+  justify-content: end;
+}
