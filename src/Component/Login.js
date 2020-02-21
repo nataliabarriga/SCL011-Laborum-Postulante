@@ -1,11 +1,11 @@
-import React from "react";
-import { withRouter, Link } from "react-router-dom";
-import firebase from "firebase";
-import "./Login.css";
-import logo from "../img/logo.png";
-import egresada from "../img/mono (1).png";
+import React from 'react';
+import { withRouter, Link } from 'react-router-dom';
+import firebase from 'firebase';
+import './Login.css';
+import logo from '../img/logo.png';
+import egresada from '../img/mono (1).png';
 import yellowBox from '../img/home-lab.jpg';
-import Registry from './registry'
+// import Registry from './registry'
 
 const Login = props => {
   const singIn = (email, password) => {
@@ -14,26 +14,26 @@ const Login = props => {
       .signInWithEmailAndPassword(email, password)
 
       .then(() => {
-        console.log("hola");
-        props.history.push("/Home");
+        console.log('hola');
+        props.history.push('/Home');
       })
 
-      .catch(function(error) {
+      .catch(function(error){
         // Handle error.
         console.log(error);
       });
   };
 
   const handleClick = () => {
-    let email = document.getElementById("Email").value;
-    let password = document.getElementById("Password").value;
+    let email = document.getElementById('Email').value;
+    let password = document.getElementById('Password').value;
     singIn(email, password);
-    console.log("hola", email);
+    console.log('Hola', email);
   };
 
   return (
     <div className="container-principal">
-      <div className='container-lo'>
+      <div className="container-lo">
         <div>
           <img src={logo} alt="logo laboratoria" className="logoLaboratoria" />
         </div>
@@ -51,7 +51,7 @@ const Login = props => {
               type="Email"
               placeholder="Ingrese Correo"
               className="form-control"
-            ></input>
+            />
           </div>
 
           <div className="col-md-3">
@@ -61,10 +61,13 @@ const Login = props => {
               type="Password"
               placeholder="Ingrese Clave"
               className="form-control"
-            ></input>
+            />
           </div>
 
-          <div >recuerdame -- olvidaste tu contraseña</div>
+          <div className="remember-me">
+            <p>Recuérdame</p>
+            <p className="color">¿Olvidaste tu contraseña?</p>
+          </div>
 
           <div className="col-md-3">
             <button className="btn-create-account" onClick={handleClick}>
@@ -72,19 +75,19 @@ const Login = props => {
             </button>
           </div>
 
-          <div>
-            <p className='texto'> no tienes cuenta
-           <Link to="/Registro" className='textoRegistry'>Registrate</Link></p>
+          <div className="cuenta">
+            <p className="texto">¿No tienes cuenta?</p>
+            <Link to="/Registro" className='textoRegistry'>Registrate</Link>
           </div>
         </form>
       </div>
 
-      <div className='cont-Img-Egresada'>
+      <div className="cont-Img-Egresada">
         <img src={egresada} alt="img laborum" className="img-Login" />
       </div>
 
       <div className="container-background">
-       <img src={yellowBox} alt='img Box' className='YellowBox'/>
+        <img src={yellowBox} alt="img Box" className="YellowBox" />
       </div>
 
     </div>

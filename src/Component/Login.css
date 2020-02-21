@@ -2,34 +2,44 @@
 
 .container-principal {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: white;
   width: 100%;
   height: 100vh;
 }
 
 .logoLaboratoria{
-    width: 230px;
-    margin-top: 10px;
-    margin-left: 35px;
+  width: 230px;
+  margin-top: 10px;
 }
 
-.container-left{
-  width: 350px;
+.container-lo{
+  width: 264px;
   margin-left: 30px;
   font-family: 'Mada';
   color: #2A303A;
 }
 
-.container-left h3 {
+.container-form {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+.container-title-login h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 32px;
   text-align: left;
+  margin-left: 55px;
 }
 
-.container-left h5 {
+.container-title-login h5 {
+  font-family: 'Mada';
+  font-style: normal;
+  font-weight: bold;
   font-weight: 600;
   font-size: 21px;
   line-height: 27px;
@@ -70,10 +80,46 @@
     color: #00BCA0;
 }
 
+.btn-create-account-cuenta {
+  background-color: transparent;
+  border: 01px solid #00BCA0;
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-top: 45px;
+  width: 264px;
+  height: 41px;
+  font-family: 'Mada';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #00BCA0;
+}
+
 .cuenta {
   display: flex;
   flex-direction: row;
 }
+
+.cuenta p {
+  margin-right: 3px;
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.remember-me p {
+  font-family: 'Mada';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+  .color {
+    color: #C78D00;
+  }
 
 .texto{
     font-family: 'Mada';
@@ -97,12 +143,18 @@
     text-decoration: none;
   
 }
-.cont-Img-Egresada{
+.cont-Img-Egresada, 
+.cont-Img-Egresada-registro {
     position: absolute;
     width: 264px;
     height: 264px;
-    left: 320px;
+    left: 300px;
     top: 213px;
+}
+
+.cont-Img-Egresada-registro img {
+  width: 270px;
+  height: 264px;
 }
 
 .container-background{

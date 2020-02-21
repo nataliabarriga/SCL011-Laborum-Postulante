@@ -1,9 +1,9 @@
 import React from 'react';
 import { auth } from '../ConfigFirebase/FirebaseInit';
-//import './registry.css';
 import logo from '../img/logo.png';
 import laborum from '../img/laborum.png';
 import yellowBox from '../img/home-lab.jpg';
+import './Login.css';
 
 class Registry extends React.Component {
     handleChange = e => {
@@ -56,26 +56,32 @@ class Registry extends React.Component {
 
     render() {
         return (
-            <div className="container-principal col-12">
-                <form className="container-form col-4" onSubmit={this.handleSubmit}>
-                    <div>
+            <div className="container-principal">
+                    <div className="container-lo">
                         <img src={logo} alt="logo laboratoria" className="logoLaboratoria" />
-                    </div>
-                    <div className="container-title-registry">
+                    
+                    <div className="container-title-login">
                         <h3 className="registrate">Registrate</h3>
+                        <h5>Registro</h5>
+                    
                     </div>
-                    <h5 className="registro col-2">Registro</h5>
-                    <label className="title-label col-2" >Correo</label>
-                    <input onChange={this.handleChange} type="email" name="email" id="email" className="email" />
-                    <label className="title-label col-2" >Contraseña</label>
-                    <input onChange={this.handleChange} type="password" name="password" id="password" className="password" />
-                    <label className="title-label col-2" >Institución</label>
-                    <input onChange={this.handleChange} type="text" name="institution" id="institution" className="institution" />
-                    <button onClick={this.handleClick} id="btnRegistry" className="btn-create-account">Crear cuenta</button>
+
+                    <form className="container-form" onSubmit={this.handleSubmit}>
+                    <label className="title-label" >Correo</label>
+                    <input onChange={this.handleChange} type="email" name="email" id="email" className="form-control" />
+                    <label className="title-label">Contraseña</label>
+                    <input onChange={this.handleChange} type="password" name="password" id="password" className="form-control" />
+
+                    {/* <label className="title-label" >Institución</label>
+                    <input onChange={this.handleChange} type="text" name="institution" id="institution" className="form-control" /> */}
+                    <button onClick={this.handleClick} id="btnRegistry" className="btn-create-account-cuenta">Crear cuenta</button> 
                 </form>
-                <div className="border col-3">
+                </div>
+
+                <div className="cont-Img-Egresada-registro">
                     <img src={laborum} alt="img laborum" className="img-laborum" />
                 </div>
+
                 <div className="container-background">
                     <img src={yellowBox} alt='img Box' className="YellowBox" />
                 </div>
