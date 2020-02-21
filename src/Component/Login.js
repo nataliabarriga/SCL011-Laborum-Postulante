@@ -6,7 +6,6 @@ import './Login.css';
 import logo from '../img/logo.png';
 import egresada from '../img/mono (1).png';
 import yellowBox from '../img/home-lab.jpg';
-// import Registry from './registry'
 
 const Login = props => {
   const singIn = (email, password) => {
