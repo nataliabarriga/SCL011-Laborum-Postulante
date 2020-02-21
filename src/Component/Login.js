@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import firebase from 'firebase';
@@ -51,7 +52,7 @@ const Login = props => {
               type="Email"
               placeholder="Ingrese Correo"
               className="form-control"
-            />
+            ></input>
           </div>
 
           <div className="col-md-3">
@@ -61,13 +62,15 @@ const Login = props => {
               type="Password"
               placeholder="Ingrese Clave"
               className="form-control"
-            />
+            ></input>
           </div>
+
 
           <div className="remember-me">
             <p>Recuérdame</p>
             <p className="color">¿Olvidaste tu contraseña?</p>
           </div>
+
 
           <div className="col-md-3">
             <button className="btn-create-account" onClick={handleClick}>
@@ -75,9 +78,11 @@ const Login = props => {
             </button>
           </div>
 
+
           <div className="cuenta">
             <p className="texto">¿No tienes cuenta?</p>
             <Link to="/Registro" className='textoRegistry'>Registrate</Link>
+
           </div>
         </form>
       </div>
